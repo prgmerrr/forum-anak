@@ -1,0 +1,59 @@
+:root {
+  --primary: #f8cf2c;
+  --background: #fff;
+  --hover: #eec522;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  background-color: var(--background);
+}
+/* header */
+#header a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 999999;
+  color: var(--primary);
+  margin: 20px 75rem 0 5rem;
+  text-decoration: none;
+}
+
+#header h1 {
+  color: var(--primary);
+}
+#header img {
+  width: 50px;
+  height: 50px;
+}
+/* header end */
+
+/* Hero */
+#hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 70px 0 0;
+}
+#hero h1 {
+  text-justify: auto;
+  font-size: 50px;
+  color: #010101;
+  margin: 0 35rem 0 0;
+}
+
+#button button {
+  margin: 0 0 0 31.9rem;
+  background-color: var(--primary);
+  color: #fff;
+  font-size: 15px;
+  width: 250px;
+  height: 50px;
+  border-color: var(--primary);
+  border-radius: 10px;
+}
+#hero img {
+  width: 500px;
+  height: 300px;
+}
+/* Hero End */
