@@ -1,0 +1,274 @@
+root {
+    --primary: #f8cf2c;
+    --background: #fff;
+    --hover: #eec522;
+}
+
+body {
+    background-color: white;
+    font-family: Arial, sans-serif;
+    background-size: cover;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.registration-box {
+    text-align: center;
+    color: #eec522;
+    background: rgba(255, 255, 255, 0.7);
+    padding: 1rem;
+    border-radius: 10px;
+    max-width: 25%;
+    width: 100%;
+    margin-left: -3rem;
+    box-sizing: border-box;
+}
+
+.registration-header {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-left: 2rem;
+}
+
+.registration-form {
+    padding: 20px;
+}
+.registration-header, .registration-text {
+    padding: 0; /* Menghilangkan padding atas dan bawah */
+    line-height: 1;
+}
+
+.form-group {
+    text-align: center;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    width: 20rem;
+    height: 30px;
+    padding: 10px;
+    margin-top: 1px;
+    border: 1px solid #ccc;
+    box-shadow: 0 6px 6px rgb(152, 152, 152);
+    border-radius: 10px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 3px;
+    margin-left: 6px;
+    background-color: #ffd117;
+    color: rgb(255, 255, 255);
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 15px;
+    box-shadow: 0 10px 10px rgb(222, 171, 32);
+    cursor: pointer;
+     transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: var(--hover);
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+h2 {
+    font-size: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 1rem;
+}
+
+.registration-text {
+    font-size: small;
+    color: #f8cf2c;
+    margin-top: 10px;
+}
+
+.daftar {
+    max-width: 100%;
+    width: 100%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    line-height: 1;
+}
+
+.regis-logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.regis-logo img {
+    width: 56px;
+    height: 56px;
+    margin-right: -5px;
+    margin-top: 9px;
+    margin-left: 2rem;
+}
+
+.logo h2 {
+    font-size: 3rem;
+    display: inline-block;
+    vertical-align: top;
+    color: #f8cf2c;
+    margin-left: 5px;
+    margin-top: 11px;
+}
+
+/* For screens below 768px (e.g., mobile screens) */
+@media (max-width: 768px) {
+    .form-group {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .regis-logo {
+        font-size: 1rem;
+        display: block;
+        text-align: center;
+    }
+
+    .regis-logo img {
+        width: 40px;
+        height: 40px;
+        margin-top: 4px;
+        margin-left: 1rem;
+    }
+
+    .logo h2 {
+        font-size: 2rem;
+        margin-top: 7px;
+    }
+
+    .daftar {
+        white-space: normal;
+        text-overflow: clip;
+        overflow: hidden;
+        padding-top: 12rem;
+        align-items: center;
+        margin-right: 10px;
+    }
+
+    .registration-box {
+        max-width: 90%;
+        margin-left: -20px;
+        margin-bottom: 10rem;
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .registration-header {
+        font-size: 18px;
+    }
+
+    input {
+        width: 100%;
+    }
+
+    button {
+        width: 100%;
+        align-items: center;
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+}
+
+.notification {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 10px;
+    display: none;
+}
+
+.notification.show {
+    display: block;
+}
+
+/* For screens above 768px (e.g., tablet and desktop screens) */
+@media (min-width: 769px) {
+    .registration-box {
+        max-width: 25%;
+    }
+
+    .registration-header {
+        font-size: 20px;
+    }
+
+    input {
+        width: 20rem;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    h2 {
+        font-size: 4rem;
+    }
+}
+/* Animasi masuk dari atas dengan efek ease-in-out */
+.form-group {
+    display: none;
+    animation: fadeInUp 0.5s ease-in-out both;
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+/* Untuk .registration-box */
+.registration-box {
+    opacity: 0; /* Mulai dengan elemen yang tidak terlihat */
+    transform: translateY(20px); /* Geser elemen ke bawah */
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.registration-box.show {
+    opacity: 1; /* Atur elemen menjadi terlihat */
+    transform: translateY(0); /* Kembalikan elemen ke posisi awal */
+}
+
+/* Contoh animasi untuk tombol (button) */
+button {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+button.show {
+    opacity: 1;
+    transform: translateY(0);
+}
