@@ -1,12 +1,11 @@
 root {
     --primary: #f8cf2c;
     --background: #fff;
-    --hover: #eec522;
-  }
-
+    --hover: #eec522;
+}
 
 body {
-  background-color: white;
+    background-color: white;
     font-family: Arial, sans-serif;
     background-size: cover;
     margin: 0;
@@ -19,7 +18,7 @@ body {
 .registration-box {
     text-align: center;
     color: #eec522;
-    background: rgba(255, 255, 255, 0.7); /* Warna latar belakang semi-transparan */
+    background: rgba(255, 255, 255, 0.7);
     padding: 1rem;
     border-radius: 10px;
     max-width: 25%;
@@ -31,8 +30,6 @@ body {
 .registration-header {
     font-size: 20px;
     font-weight: bold;
-    align-items: center;
-    justify-content: center;
     text-align: center;
     margin-left: 2rem;
 }
@@ -44,6 +41,10 @@ body {
 .form-group {
     text-align: center;
     margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 input {
@@ -60,15 +61,25 @@ button {
     width: 100%;
     padding: 10px;
     margin-top: 3px;
-    margin-left: 11px;
+    margin-left: 6px;
     background-color: #ffd117;
-    color: white;
+    color: rgb(255, 255, 255);
     border: none;
     font-size: 1rem;
     font-weight: bold;
     border-radius: 15px;
     box-shadow: 0 10px 10px rgb(222, 171, 32);
     cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--hover);
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(0.95);
 }
 
 h2 {
@@ -84,113 +95,137 @@ h2 {
     color: #f8cf2c;
     margin-top: 10px;
 }
+
 .daftar {
     max-width: 100%;
     width: 100%;
-    white-space: nowrap; /* Teks hanya menampilkan satu baris */ /* Memotong teks yang melebihi lebar elemen */
-    text-overflow: ellipsis; /* Menampilkan elipsis (...) jika teks terpotong */
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    line-height: 1;
 }
 
 .regis-logo {
-  position: absolute;
-  top: 10px; /* Jarak dari bagian atas */
-  left: 10px; /* Jarak dari bagian kiri */
-  display: flex;
-  align-items: center;
-  font-size: 1.5rem; /* Atur ukuran font sesuai keinginan Anda */
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
 }
 
 .regis-logo img {
-  width: 56px;
-  height: 56px; /* Atur ukuran logo sesuai keinginan Anda */
-  margin-right: -5px;
-  margin-top: 9px;
-  margin-left: 2rem; /* Jarak antara logo dan teks */
+    width: 56px;
+    height: 56px;
+    margin-right: -5px;
+    margin-top: 9px;
+    margin-left: 2rem;
 }
 
 .logo h2 {
-  font-size: 3rem;
-  display: inline-block;
-  vertical-align: top;
-  color:#f8cf2c;
-  margin-left: 5px;
-  margin-top: 11px;
+    font-size: 3rem;
+    display: inline-block;
+    vertical-align: top;
+    color: #f8cf2c;
+    margin-left: 5px;
+    margin-top: 11px;
 }
-/* Untuk tampilan di bawah 768px (contoh ukuran layar ponsel) */
+
+/* For screens below 768px (e.g., mobile screens) */
 @media (max-width: 768px) {
+    .form-group {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 
-  .regis-logo {
-    font-size: 1rem;
-    display: block; /* Mengubah display menjadi block */
-    text-align: center; /* Atur ukuran font lebih kecil untuk layar kecil */
-  }
+    .regis-logo {
+        font-size: 1rem;
+        display: block;
+        text-align: center;
+    }
 
-  .regis-logo img {
-    width: 40px; /* Ukuran gambar lebih kecil untuk layar kecil */
-    height: 40px;
-    margin-top: 4px;
-    margin-left: 1rem; /* Sesuaikan jarak antara logo dan teks untuk layar kecil */
-  }
+    .regis-logo img {
+        width: 40px;
+        height: 40px;
+        margin-top: 4px;
+        margin-left: 1rem;
+    }
 
-  .logo h2 {
-    font-size: 2rem; /* Atur ukuran teks lebih kecil untuk layar kecil */
-    margin-top: 7px; /* Sesuaikan margin atas untuk layar kecil */
-  }
+    .logo h2 {
+        font-size: 2rem;
+        margin-top: 7px;
+    }
 
-   .daftar {
-        white-space: normal; /* Mengembalikan tampilan teks ke tampilan normal */
+    .daftar {
+        white-space: normal;
         text-overflow: clip;
         overflow: hidden;
         padding-top: 12rem;
-         /* Menghilangkan elipsis */
+        align-items: center;
+        margin-right: 10px;
     }
-    .registration-box {
-      max-width: 90%;
-      margin-left: -20px;
-      margin-bottom: 10rem;
-      display: block; /* Mengurangi lebar maksimum */
-    }
-  
-    .registration-header {
-      font-size: 18px; /* Mengurangi ukuran font untuk header */
-    }
-  
-    input {
-      width: 100%; /* Mengisi lebar penuh */
-    }
-  
-    button {
-      width: 100%;
-      margin-left: 7px; /* Mengisi lebar penuh */
-    }
-  
-    h2 {
-      font-size: 3rem; /* Mengurangi ukuran font h2 */
-    }
-  }
-  
-  /* Untuk tampilan di atas 768px (contoh ukuran layar tablet dan desktop) */
-  @media (min-width: 769px) {
-    .registration-box {
-      max-width: 25%; /* Mengembalikan lebar maksimum ke semula */
-    }
-  
-    .registration-header {
-      font-size: 20px; /* Mengembalikan ukuran font header ke semula */
-    }
-  
-    input {
-      width: 20rem; /* Mengembalikan lebar input ke semula */
-    }
-  
-    button {
-      width: 100%; /* Mengembalikan lebar tombol ke semula */
-    }
-  
-    h2 {
-      font-size: 4rem; /* Mengembalikan ukuran font h2 ke semula */
-    }
-  }
-  
 
-  
+    .registration-box {
+        max-width: 90%;
+        margin-left: -20px;
+        margin-bottom: 10rem;
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .registration-header {
+        font-size: 18px;
+    }
+
+    input {
+        width: 100%;
+    }
+
+    button {
+        width: 100%;
+        align-items: center;
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+}
+
+.notification {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 10px;
+    display: none;
+}
+
+.notification.show {
+    display: block;
+}
+
+/* For screens above 768px (e.g., tablet and desktop screens) */
+@media (min-width: 769px) {
+    .registration-box {
+        max-width: 25%;
+    }
+
+    .registration-header {
+        font-size: 20px;
+    }
+
+    input {
+        width: 20rem;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    h2 {
+        font-size: 4rem;
+    }
+}
