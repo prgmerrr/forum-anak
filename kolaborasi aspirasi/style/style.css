@@ -1,0 +1,83 @@
+body{
+    background-color: #22668d;
+}
+
+:root {
+    --main-bg-color: #22668d;
+    --text-color: ##fdce20;
+    font-family:  "Open Sans", sans-serif;
+}
+
+/*--------------------------------------------------------------
+#navbar
+--------------------------------------------------------------*/
+.container{
+    display:flex;
+    align-items: center;
+}
+
+.logo-foranggis{
+    width: 60px;
+    height: auto;
+    margin-right: 5px;
+}
+
+.foranggis-text{
+    color: #fdce20;
+    font-size: 30px;
+    font-family: "Open Sans", sans-serif;
+
+}
+
+.foranggis-nav{
+    color: #fdce20;
+    font-size: 30px;
+    font-family: "Open Sans", sans-serif;
+    margin-left: 135px;
+}
+
+.kids-nav{
+    color: #fdce20;
+    font-size: 30px;
+    font-family: "Open Sans", sans-serif;
+    margin-left: 70px;
+}
+
+.social-nav{
+    color: #fdce20;
+    font-size: 30px;
+    font-family: "Open Sans", sans-serif;
+    margin-left: 70px;
+}
+
+.home-nav{
+    color: #fdce20;
+    font-size: 30px;
+    font-family: "Open Sans", sans-serif;
+    margin-left: 70px;
+}
+
+.search{
+    background-color: transparent;
+    border-radius: 5px;
+    width: 195px;
+    height: 25px;
+    margin-left: 150px;
+}
+
+.container-isi{
+    text-align: center;
+    margin-top: 80px;
+}
+
+.text1{
+    color: #fdce20;
+font-size: 80px;
+font-family: "Open Sans", sans-serif;
+} 
+
+.text2{
+    color: #fdce20;
+font-size: 13px;
+font-family: "Open Sans", sans-serif;
+} 
