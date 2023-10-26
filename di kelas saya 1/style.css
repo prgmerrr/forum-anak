@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+body {
+    background-color: #ffdd64;
+}
+
+
+.header  h1 {
+    font-family: "Poppins", sans-serif;
+    margin-top: 15rem;
+    margin-left: 5rem;
+    line-height: 2rem;
+    font-size: 6rem;
+    color: #14464b;
+}
+
+.header h2 {
+    font-family: "Poppins", sans-serif;
+    margin-left: 10rem;
+    line-height: 1px;
+    font-size: 5rem;
+    color: #14464b;
+}   
+
+.button {
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    color: #14464b;
+    background-color: #a7cffa;
+    margin-left: 12em;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 20px;
+    width: 15rem;
+    cursor: pointer;
+}
+
+.image {
+    position: absolute;
+    top: 10px; 
+    right: 10px;
+    margin-top: 4rem; 
+    margin-right: 3rem;
+}
+
+.img-prs {
+    position: absolute;
+    top: 10px; 
+    right: 10px;
+    margin-top: 50px;
+    margin-right: 50px;
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .header h1 {
+        font-family: "Poppins", sans-serif;
+        display: flex;
+        font-size: 38px; /* Ukuran teks yang lebih kecil */
+        margin-right: -20px;
+        margin-left: 8px;
+        color: #14464b;
+    }
+
+    .header h2 {
+        font-family: "Poppins", sans-serif;
+        display: flex;
+        text-align: center;
+        margin-top: 3rem;
+        margin-right: -10px;
+        margin-left: 65px;
+        font-size: 29px; /* Ukuran teks yang lebih kecil */
+        color: #14464b;
+    }
+
+    .button {
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    color: #14464b;
+    background-color: #a7cffa;
+    border-radius: 10px;
+    padding: 6px;
+    font-size: 15px;
+    width: 9rem;
+    cursor: pointer;
+    margin: 0 auto; /* Tengah tombol */
+}
+
+    .header {
+        text-align: center;
+        margin-top: 3rem;
+    }
+
+    .header button {
+        text-align: center;
+        width: 10rem;
+        font-size: 10px;
+        margin-top: 1rem;
+    }
+
+    .image, .img-prs {
+      display: none;
+    }
+}
