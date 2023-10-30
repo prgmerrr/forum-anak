@@ -1,0 +1,163 @@
+:root {
+  --primary: #f8cf2c;
+  --background: #fff;
+  --hover: #eec522;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  background-color: var(--background);
+}
+
+/* header */
+#header {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+#header img {
+  width: 56px;
+  height: 56px;
+  margin-right: -5px;
+  margin-top: 9px;
+  margin-left: 2rem;
+}
+
+#header h2 {
+  font-size: 3rem;
+  display: inline-block;
+  vertical-align: top;
+  color: #f8cf2c;
+  margin-left: 5px;
+  margin-top: 11px;
+}
+
+/* header end */
+
+/* Hero */
+#hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10rem 0 0 5rem;
+}
+
+#hero h1 {
+  text-justify: auto;
+  font-size: 50px;
+  color: #010101;
+  margin: 0 25rem 0 1px;
+}
+
+#button button {
+  margin: 0 0 0 40.9rem;
+  background-color: var(--primary);
+  color: #fff;
+  font-size: 15px;
+  width: 250px;
+  height: 50px;
+  border-color: var(--primary);
+  border-radius: 10px;
+}
+
+#hero img {
+  margin-left: 4rem;
+  width: 500px;
+  height: 300px;
+}
+
+/* Hero End */
+
+/* footer */
+.footer {
+  align-items: center;
+  display: inline-flex;
+  justify-content: space-between;
+  margin: 60px 75rem 0 5rem;
+}
+
+#instagram img {
+  color: #22668d;
+  margin-right: 10px;
+}
+
+#facebook img {
+  color: #22668d;
+  margin-left: 10px;
+}
+
+/* footer end */
+
+/* Media queries untuk tampilan responsif */
+@media screen and (max-width: 768px) {
+  /* Ubah aturan CSS untuk layar berukuran lebih kecil (misalnya tablet) */
+  /* header */
+  #header {
+    margin: 20px 5rem 0 5rem;
+  }
+
+  /* Hero */
+  #hero {
+    flex-direction: column;
+    align-items: center;
+    margin: 40px 0 0;
+  }
+
+  #hero h1 {
+    font-size: 40px;
+    margin: 0;
+  }
+
+  #button button {
+    margin: 20px 0 0;
+  }
+
+  #hero img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* footer */
+  .footer {
+    margin: 40px 5rem 0 5rem;
+  }
+}
+
+/* Media queries untuk tampilan sangat kecil (misalnya ponsel) */
+@media screen and (max-width: 480px) {
+  /* Ubah aturan CSS untuk layar berukuran sangat kecil */
+  /* header */
+  #header {
+    flex-direction: column;
+    margin: 20px 0;
+  }
+
+  #header h1 {
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  /* Hero */
+  #hero h1 {
+    font-size: 30px;
+    margin-right: 0;
+  }
+
+  #button button {
+    margin: 20px 0;
+  }
+
+  #hero img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* footer */
+  .footer {
+    margin: 40px 0;
+  }
+}
