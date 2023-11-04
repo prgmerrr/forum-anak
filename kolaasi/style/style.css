@@ -1,0 +1,330 @@
+body {
+  background-color: #22668d;
+}
+
+:root {
+  --main-bg-color: #22668d;
+  --text-color: ##fdce20;
+  --primary: #f8cf2c;
+}
+
+/* HEADER */
+.header {
+  display: inline-block;
+}
+
+/* HEADER END */
+
+/*--------------------------------------------------------------
+#navbar
+--------------------------------------------------------------*/
+
+/* logo */
+.logo a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: #fdce20;
+}
+
+.logo-foranggis {
+  width: 60px;
+  height: auto;
+  margin-right: 5px;
+}
+
+.foranggis-text {
+  font-size: 30px;
+  font-family: "Open Sans", sans-serif;
+}
+
+/* logo end*/
+
+/* navigation bar */
+.navbar {
+  background-color: #22668d;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-nav a {
+  font-family: "Open sans", sans-serif;
+  text-decoration: none;
+  color: #fdce20;
+  margin-right: 20px;
+}
+
+.nav :hover {
+  border-radius: 15px;
+  border: 2px solid #fff;
+  border-style: double;
+}
+
+.home-nav:hover {
+  color: #fff;
+}
+
+/* SEARCH FORM */
+#search-form {
+  position: relative;
+  margin-right: 20px;
+}
+
+#search-form input.search {
+  background-color: #22668d;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  width: 195px;
+  height: 35px;
+  padding: 5px 30px 5px 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#search-form label {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #fdce20;
+}
+
+.search :hover {
+  color: #fff;
+}
+
+/* SEARCH FORM END */
+
+/* CSS untuk ikon menu (hanya muncul pada layar kecil) */
+#menu {
+  display: none;
+  font-size: 24px;
+  color: #fdce20;
+  cursor: pointer;
+}
+
+/* navigation bar end */
+.container-isi {
+  text-align: center;
+
+  body {
+    background-color: #22668d;
+  }
+
+  :root {
+    --main-bg-color: #22668d;
+    --text-color: ##fdce20;
+    --primary: #f8cf2c;
+  }
+
+  /* HEADER */
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+  }
+
+  /* HEADER END */
+
+  /*--------------------------------------------------------------
+  #navbar
+  --------------------------------------------------------------*/
+
+  /* logo */
+  .logo {
+    display: flex;
+    align-items: center;
+    margin-left: 2rem;
+  }
+
+  .logo a {
+    width: 20px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: #fdce20;
+    margin-right: 20px;
+  }
+
+  .logo-foranggis {
+    width: 60px;
+    height: 60px;
+    margin-right: 5px;
+  }
+
+  .foranggis-text {
+    font-size: 30px;
+    font-family: "Open Sans", sans-serif;
+  }
+
+  /* logo end*/
+
+  /* navigation bar */
+
+  .navbar {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+  }
+
+  .navbar a {
+    font-family: "Open sans", sans-serif;
+    text-decoration: none;
+    color: #fdce20;
+    margin-right: 20px;
+  }
+
+  .nav {
+    font-size: 25px;
+    margin-left: 10rem;
+  }
+
+  .nav :hover {
+    border-radius: 15px;
+    border: 2px solid #fff;
+  }
+
+  .home-nav {
+    margin-left: 10rem;
+  }
+
+  .home-nav:hover {
+    color: #fff;
+  }
+
+  .navbar-nav {
+    margin-left: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* SEARCH FORM */
+  #search-form {
+    position: relative;
+    margin-right: 0;
+  }
+
+  #search-form input.search {
+    background-color: #22668d;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    width: 195px;
+    height: 35px;
+    padding: 5px 30px 5px 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+
+  #search-form label {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #fdce20;
+  }
+
+  .search :hover {
+    color: #fff;
+  }
+
+  /* SEARCH FORM END */
+
+  /* CSS untuk ikon menu (hanya muncul pada layar kecil) */
+  #menu {
+    display: none;
+    font-size: 24px;
+    color: #fdce20;
+    cursor: pointer;
+  }
+
+  /* navigation bar end */
+  .container-isi {
+    text-align: center;
+    margin-top: 80px;
+  }
+
+  .text1 {
+    color: #fdce20;
+    font-size: 54.2px;
+    font-family: "Open Sans", sans-serif;
+  }
+
+  .text2 {
+    color: #fdce20;
+    text-align: center;
+    font-size: 14px;
+    font-family: "Open Sans", sans-serif;
+  }
+
+  @media (max-width: 768px) {
+    html {
+      font-size: 62.5%;
+    }
+
+    #menu {
+      display: block;
+    }
+  }
+
+  margin-top: 80px;
+}
+
+.text1 {
+  color: #fdce20;
+  font-size: 54.2px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.text2 {
+  color: #fdce20;
+  text-align: center;
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+}
+
+@media (max-width: 768px) {
+  /* Styles for small screens */
+
+  .navbar a {
+    display: none;
+    /* Hide the navigation links on small screens */
+  }
+
+  #menu {
+    display: block;
+    align-items: c;
+    /* Show the menu icon on small screens */
+  }
+
+  .text1 {
+    font-size: 40px;
+    /* Adjust font size for smaller screens */
+  }
+
+  .text2 {
+    font-size: 12px;
+    /* Adjust font size for smaller screens */
+  }
+
+  .logo {
+    display: block;
+    /* Show the logo */
+  }
+
+  #search-form {
+    display: block;
+    /* Show the search bar */
+  }
+}
