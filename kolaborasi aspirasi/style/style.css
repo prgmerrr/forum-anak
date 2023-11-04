@@ -102,6 +102,100 @@ body {
 /* SEARCH FORM END */
 
 /* CSS untuk ikon menu (hanya muncul pada layar kecil) */
+
+
+/* CSS */
+body {
+  background-color: #22668d;
+}
+
+:root {
+  --main-bg-color: #22668d;
+  --text-color: #fdce20; /* Perhatikan perbaikan warna pada variable text-color */
+  --primary: #f8cf2c;
+}
+
+/* HEADER */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #22668d;
+  color: #fdce20;
+}
+
+/* Logo */
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: #fdce20;
+}
+
+.logo-foranggis {
+  width: 60px;
+  height: auto;
+  margin-right: 5px;
+}
+
+.foranggis-text {
+  font-size: 30px;
+  font-family: "Open Sans", sans-serif;
+}
+
+/* Navigation Bar */
+.navbar {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: center;
+  margin-left: auto; /* Menggeser bagian navbar ke sebelah kanan */
+}
+
+.navbar-nav a {
+  font-family: "Open sans", sans-serif;
+  text-decoration: none;
+  color: #fdce20;
+  margin-right: 20px;
+}
+
+/* SEARCH FORM */
+#search-form {
+  position: relative;
+  margin-right: 20px;
+}
+
+#search-form input.search {
+  background-color: #22668d;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  width: 195px;
+  height: 35px;
+  padding: 5px 30px 5px 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#search-form label {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #fdce20;
+}
+
+/* Menu Icon */
 #menu {
   display: none;
   font-size: 24px;

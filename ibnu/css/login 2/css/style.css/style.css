@@ -31,7 +31,7 @@ body {
   font-size: 3rem;
   display: inline-block;
   vertical-align: top;
-  color: #f8cf2c;
+  color: var(--primary);
   margin-left: 5px;
   margin-top: 11px;
 }
@@ -50,7 +50,7 @@ body {
   text-justify: auto;
   font-size: 50px;
   color: #010101;
-  margin: 0 25rem 0 1px;
+  margin: 0 20rem 0 1px;
 }
 
 #button button {
@@ -98,32 +98,47 @@ body {
   /* header */
   #header {
     margin: 20px 5rem 0 5rem;
+    position: static;
+  }
+
+  #header img {
+    margin: 0;
+  }
+
+  #header h2 {
+    font-size: 2rem;
+    margin: 10px 0;
+    text-align: center;
   }
 
   /* Hero */
   #hero {
     flex-direction: column;
     align-items: center;
-    margin: 40px 0 0;
+    margin: 40px 2rem 0;
   }
 
   #hero h1 {
     font-size: 40px;
-    margin: 0;
+    margin: 0 1rem;
+    text-align: center;
   }
 
   #button button {
-    margin: 20px 0 0;
+    margin: 20px 0;
+    width: 200px;
+    font-size: 13px;
   }
 
   #hero img {
     width: 100%;
     height: auto;
+    margin: 2rem 0;
   }
 
   /* footer */
   .footer {
-    margin: 40px 5rem 0 5rem;
+    margin: 40px 2rem 0;
   }
 }
 
@@ -132,32 +147,53 @@ body {
   /* Ubah aturan CSS untuk layar berukuran sangat kecil */
   /* header */
   #header {
-    flex-direction: column;
     margin: 20px 0;
+    text-align: center;
   }
 
-  #header h1 {
-    text-align: center;
+  #header h2 {
+    font-size: 1.5rem;
     margin-top: 10px;
+    margin-left: 0;
+  }
+
+  #header img {
+    margin: 0 auto;
   }
 
   /* Hero */
+  #hero {
+    margin: 40px 0;
+  }
+
   #hero h1 {
     font-size: 30px;
-    margin-right: 0;
+    margin: 0 1rem;
+    text-align: center;
   }
 
   #button button {
-    margin: 20px 0;
+    margin: 20px 20px;
+    width: 80%;
+    font-size: 12px;
   }
 
   #hero img {
     width: 100%;
     height: auto;
+    margin: 2rem 0;
   }
 
   /* footer */
   .footer {
     margin: 40px 0;
+    text-align: center;
+  }
+
+  #instagram img,
+  #facebook img {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
   }
 }
