@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">    
+</head>
+<body>
+    <div class="form-container">
+        <img class="form-image" src="/img/WhatsApp_Image_2023-10-16_at_12.16.05_6adf98ac-removebg-preview(1).png">
+        <h2 class="form-title">Kirim Aspirasi</h2>
+        <form action="post_user.php" method="POST" enctype="multipart/form-data">
+            <label class="judul" for="judul">Judul:</label>
+            <input class="form-input" type="text" name="judul" required placeholder="Masukkan judul pesan">
+            <label class="isi" for="isi">Isi Pesan:</label>
+            <textarea class="form-textarea" name="isi" rows="4" required placeholder="Masukkan pesan Anda"></textarea>
+            <input class="form-button" type="submit" value="Kirim">
+        </form>
+        <p class="form-footer">&copy; 2023 by Webpas </p>
+    </div>
+
+
+</body>
+</html>
