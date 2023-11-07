@@ -34,7 +34,7 @@ body {
 .logo-foranggis {
   width: 60px;
   height: auto;
-  margin-right: 5px;
+  margin-left: 15px;
 }
 
 .foranggis-text {
@@ -46,7 +46,7 @@ body {
 .navbar {
   display: flex;
   align-items: center;
-  margin-right: 20px;
+  margin-right: 10px;
 }
 
 .navbar-nav {
@@ -69,21 +69,36 @@ body {
 
 .icon :hover {
   color: #a88b18;
+  transition: 0.3s;
 }
 
 .nav {
-  margin-right: 10px;
+  display: inline-block;
+  margin-right: 20px;
   justify-content: space-between;
 }
 
-.nav :hover {
+.foranggis-nav,
+.kids-nav,
+.social-nav {
+  border: 2px solid transparent;
+  padding: 3px;
+  border-radius: 15px;
+  margin: 1px;
+  transition: 0.3s;
+}
+
+.foranggis-nav:hover,
+.kids-nav:hover,
+.social-nav:hover {
   color: #a88b18;
+  border-color: #a88b18; /* Warna garis saat dihover */
 }
 
 /* SEARCH FORM */
 #search-form {
   position: relative;
-  margin: 0 200px;
+  margin: 0 150px;
 }
 
 #search-form input.search {
@@ -108,6 +123,7 @@ body {
 
 #search-form label :hover {
   color: #a88b18;
+  transition: 0.3s;
 }
 
 /* Menu Icon */
@@ -143,12 +159,12 @@ body {
 
 @media (max-width: 768px) {
   .navbar {
-    margin-right: 0;
+    margin-left: auto;
   }
 
   .navbar-nav {
+    display: none;
     margin-left: 0;
-    flex-direction: column;
   }
 
   .navbar a {
@@ -156,23 +172,14 @@ body {
     margin-bottom: 10px;
   }
 
-  #search-form {
-    margin-right: 0;
-  }
-
-  #search-form input.search {
-    width: 100%;
-    margin-right: 0;
-  }
-
   /* menu */
+  /* Tambahkan gaya CSS untuk tampilan menu navigasi pada perangkat seluler */
 
-  #menu.active .search-form {
-    display: flex;
-  }
-
-  #menu.active .nav {
-    display: flex;
+  #menu {
+    display: block;
+    font-size: 24px;
+    color: #fdce20;
+    cursor: pointer;
   }
 
   /* menu END */
@@ -187,5 +194,11 @@ body {
 
   .text2 {
     font-size: 12px;
+  }
+}
+
+@media (min-width: 769px) {
+  #menu {
+    display: none;
   }
 }
