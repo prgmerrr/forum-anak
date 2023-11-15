@@ -6,16 +6,22 @@
 * License: https://bootstrapmade.com/license/
 */
 
+
+/* Dalam file styles.css */
+@import url('slider/style.css');
+
+
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+
 body {
   font-family: "Open Sans", sans-serif;
   color: #212529;
 }
 
 a {
-  color: #eb5d1e;
+  color: #fecf22;
   text-decoration: none;
 }
 
@@ -44,7 +50,7 @@ h6,
   right: 15px;
   bottom: 15px;
   z-index: 99999;
-  background: #eb5d1e;
+  background: #fecf22;
   width: 40px;
   height: 40px;
   border-radius: 4px;
@@ -53,12 +59,12 @@ h6,
 
 .back-to-top i {
   font-size: 24px;
-  color: #fff;
+  color: #000000;
   line-height: 0;
 }
 
 .back-to-top:hover {
-  background: #ee7843;
+  background: #ffbb00;
   color: #fff;
 }
 
@@ -156,23 +162,24 @@ h6,
 .navbar a:hover,
 .navbar .active,
 .navbar .active:focus,
-.navbar li:hover>a {
-  color: #eb5d1e;
+.navbar li:hover > a {
+  color: #ffbb00;
 }
 
 .navbar .getstarted,
 .navbar .getstarted:focus {
-  background: #eb5d1e;
-  color: #fff;
-  padding: 10px 25px;
-  margin-left: 30px;
-  border-radius: 50px;
+  font-size: 16px;
+    background: rgba(87, 87, 87, 0.9);
+    color: #ffbb00;
+    padding: 4px 18px;
+    margin-left: 30px;
+    border-radius: 6px;
 }
 
 .navbar .getstarted:hover,
 .navbar .getstarted:focus:hover {
   color: #fff;
-  background: #ee7843;
+  background: #ffbb00;
 }
 
 .navbar .dropdown ul {
@@ -206,11 +213,11 @@ h6,
 
 .navbar .dropdown ul a:hover,
 .navbar .dropdown ul .active:hover,
-.navbar .dropdown ul li:hover>a {
-  color: #eb5d1e;
+.navbar .dropdown ul li:hover > a {
+  color: #3deb1e;
 }
 
-.navbar .dropdown:hover>ul {
+.navbar .dropdown:hover > ul {
   opacity: 1;
   top: 100%;
   visibility: visible;
@@ -222,7 +229,7 @@ h6,
   visibility: hidden;
 }
 
-.navbar .dropdown .dropdown:hover>ul {
+.navbar .dropdown .dropdown:hover > ul {
   opacity: 1;
   top: 0;
   left: 100%;
@@ -234,16 +241,16 @@ h6,
     left: -90%;
   }
 
-  .navbar .dropdown .dropdown:hover>ul {
+  .navbar .dropdown .dropdown:hover > ul {
     left: -100%;
   }
 }
 
 /**
-* Mobile Navigation 
+* NAVBAR DI HP
 */
 .mobile-nav-toggle {
-  color: #7a6960;
+  color: #4e4039;
   font-size: 28px;
   cursor: pointer;
   display: none;
@@ -272,7 +279,7 @@ h6,
   right: 0;
   left: 0;
   bottom: 0;
-  background: rgba(78, 64, 57, 0.9);
+  background: rgba(87, 87, 87, 0.9);
   transition: 0.3s;
 }
 
@@ -283,16 +290,17 @@ h6,
 }
 
 .navbar-mobile ul {
-  display: block;
-  position: absolute;
-  top: 55px;
-  right: 15px;
-  bottom: 15px;
-  left: 15px;
-  padding: 10px 0;
-  background-color: #fff;
-  overflow-y: auto;
-  transition: 0.3s;
+    border-radius: 20px;
+    display: block;
+    position: absolute;
+    top: 55px;
+    right: 15px;
+    bottom: 15px;
+    left: 15px;
+    padding: 10px 0;
+    background-color: #fff;
+    overflow-y: auto;
+    transition: 0.3s;
 }
 
 .navbar-mobile a,
@@ -304,8 +312,8 @@ h6,
 
 .navbar-mobile a:hover,
 .navbar-mobile .active,
-.navbar-mobile li:hover>a {
-  color: #eb5d1e;
+.navbar-mobile li:hover > a {
+  color: #7a6960;
 }
 
 .navbar-mobile .getstarted,
@@ -339,11 +347,11 @@ h6,
 
 .navbar-mobile .dropdown ul a:hover,
 .navbar-mobile .dropdown ul .active:hover,
-.navbar-mobile .dropdown ul li:hover>a {
-  color: #eb5d1e;
+.navbar-mobile .dropdown ul li:hover > a {
+  color: #5b5b5b;
 }
 
-.navbar-mobile .dropdown>.dropdown-active {
+.navbar-mobile .dropdown > .dropdown-active {
   display: block;
 }
 
@@ -373,21 +381,21 @@ h6,
 }
 
 #hero .btn-get-started {
-  font-family: "Raleway", sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  letter-spacing: 1px;
-  display: inline-block;
-  padding: 8px 28px;
-  border-radius: 3px;
-  transition: 0.5s;
-  margin-top: 30px;
-  color: #fff;
-  background: #eb5d1e;
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 8px 28px;
+    border-radius: 3px;
+    transition: 0.5s;
+    margin-top: 30px;
+    color: #4e4039;
+    background: #ffc107;
 }
 
 #hero .btn-get-started:hover {
-  background: #ef7f4d;
+  background: #d09f0d;
 }
 
 #hero .animated {
@@ -491,7 +499,7 @@ section {
   display: block;
   width: 60px;
   height: 2px;
-  background: #eb5d1e;
+  background: #4e4039;
   bottom: 0;
   left: calc(50% - 30px);
 }
@@ -519,11 +527,11 @@ section {
   font-size: 14px;
 }
 
-.breadcrumbs ol li+li {
+.breadcrumbs ol li + li {
   padding-left: 10px;
 }
 
-.breadcrumbs ol li+li::before {
+.breadcrumbs ol li + li::before {
   display: inline-block;
   padding-right: 10px;
   color: #6c757d;
@@ -563,7 +571,7 @@ section {
 .about i {
   font-size: 48px;
   margin-top: 15px;
-  color: #f39e7a;
+  color: #ffc107;
 }
 
 .about p {
@@ -601,14 +609,14 @@ section {
 
 .services .icon-box:hover {
   transform: translateY(-5px);
-  border-color: #ef7f4d;
+  border-color: #d09f0d;
 }
 
 .services .icon i {
   font-size: 48px;
   line-height: 1;
   margin-bottom: 15px;
-  color: #ef7f4d;
+  color: #ffc107;
 }
 
 .services .title {
@@ -626,6 +634,9 @@ section {
   line-height: 28px;
   margin-bottom: 0;
 }
+
+
+
 
 /*--------------------------------------------------------------
 # Portfolio
@@ -778,7 +789,10 @@ section {
   position: relative;
 }
 
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
+.portfolio-details
+  .portfolio-details-slider
+  .swiper-pagination
+  .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
   background-color: #fff;
@@ -786,7 +800,10 @@ section {
   border: 1px solid #eb5d1e;
 }
 
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
+.portfolio-details
+  .portfolio-details-slider
+  .swiper-pagination
+  .swiper-pagination-bullet-active {
   background-color: #eb5d1e;
 }
 
@@ -809,7 +826,7 @@ section {
   font-size: 15px;
 }
 
-.portfolio-details .portfolio-info ul li+li {
+.portfolio-details .portfolio-info ul li + li {
   margin-top: 10px;
 }
 
@@ -969,7 +986,12 @@ section {
 }
 
 .team .member:hover .member-info {
-  background: linear-gradient(0deg, rgba(78, 64, 57, 0.95) 0%, rgba(78, 64, 57, 0.95) 15%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(
+    0deg,
+    rgba(78, 64, 57, 0.95) 0%,
+    rgba(78, 64, 57, 0.95) 15%,
+    rgba(255, 255, 255, 0) 100%
+  );
   opacity: 1;
   transition: 0.4s;
 }
@@ -1016,9 +1038,13 @@ section {
 /*--------------------------------------------------------------
 # Contact Us
 --------------------------------------------------------------*/
+.contact{
+  background-color: #fef8f5;
+}
+
 .contact .info {
-  border-top: 3px solid #eb5d1e;
-  border-bottom: 3px solid #eb5d1e;
+  border-top: 3px solid #ffc107;
+  border-bottom: 3px solid #ffc107;
   padding: 30px;
   background: #fff;
   width: 100%;
@@ -1027,11 +1053,11 @@ section {
 
 .contact .info i {
   font-size: 20px;
-  color: #eb5d1e;
+  color: #ffc107;
   float: left;
   width: 44px;
   height: 44px;
-  background: #fdf1ec;
+  background: #e5e5e5;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1078,21 +1104,21 @@ section {
 }
 
 .contact .info .social-links a:hover {
-  background: #eb5d1e;
+  background: #d09f0d;
   color: #fff;
 }
 
 .contact .info .email:hover i,
 .contact .info .address:hover i,
 .contact .info .phone:hover i {
-  background: #eb5d1e;
+  background: #ffc107;
   color: #fff;
 }
 
 .contact .php-email-form {
   width: 100%;
-  border-top: 3px solid #eb5d1e;
-  border-bottom: 3px solid #eb5d1e;
+  border-top: 3px solid #ffc107;
+  border-bottom: 3px solid #ffc107;
   padding: 30px;
   background: #fff;
   box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
@@ -1111,7 +1137,7 @@ section {
   font-weight: 600;
 }
 
-.contact .php-email-form .error-message br+br {
+.contact .php-email-form .error-message br + br {
   margin-top: 25px;
 }
 
@@ -1158,8 +1184,8 @@ section {
   padding: 10px 12px;
 }
 
-.contact .php-email-form button[type=submit] {
-  background: #eb5d1e;
+.contact .php-email-form button[type="submit"] {
+  background: #ffc107   ;
   border: 0;
   padding: 10px 24px;
   color: #fff;
@@ -1167,8 +1193,8 @@ section {
   border-radius: 4px;
 }
 
-.contact .php-email-form button[type=submit]:hover {
-  background: #ef7f4d;
+.contact .php-email-form button[type="submit"]:hover {
+  background: #d09f0d;
 }
 
 @keyframes animate-loading {
@@ -1185,7 +1211,6 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: #fff;
   padding: 0 0 30px 0;
   color: #212529;
   font-size: 14px;
@@ -1218,13 +1243,13 @@ section {
   text-align: left;
 }
 
-#footer .footer-newsletter form input[type=email] {
+#footer .footer-newsletter form input[type="email"] {
   border: 0;
   padding: 4px 4px;
   width: calc(100% - 100px);
 }
 
-#footer .footer-newsletter form input[type=submit] {
+#footer .footer-newsletter form input[type="submit"] {
   position: absolute;
   top: 0;
   right: 0;
@@ -1233,15 +1258,15 @@ section {
   background: none;
   font-size: 16px;
   padding: 0 20px;
-  background: #eb5d1e;
+  background: #ffc107;
   color: #fff;
   transition: 0.3s;
   border-radius: 4px;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
 }
 
-#footer .footer-newsletter form input[type=submit]:hover {
-  background: #c54811;
+#footer .footer-newsletter form input[type="submit"]:hover {
+  background: #d09f0d;
 }
 
 #footer .footer-top {
@@ -1289,7 +1314,7 @@ section {
 
 #footer .footer-top .footer-links ul i {
   padding-right: 2px;
-  color: #f39e7a;
+  color: #d09f0d;
   font-size: 18px;
   line-height: 1;
 }
@@ -1313,14 +1338,14 @@ section {
 
 #footer .footer-top .footer-links ul a:hover {
   text-decoration: none;
-  color: #eb5d1e;
+  color: #000000;
 }
 
 #footer .footer-top .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: #eb5d1e;
-  color: #fff;
+  background: #ebebeb;
+  color: #ffc107;
   line-height: 1;
   padding: 8px 0;
   margin-right: 4px;
@@ -1332,7 +1357,7 @@ section {
 }
 
 #footer .footer-top .social-links a:hover {
-  background: #ef7f4d;
+  background: #ffc107;
   color: #fff;
   text-decoration: none;
 }
@@ -1350,11 +1375,11 @@ section {
 }
 
 #footer .credits a {
-  color: #eb5d1e;
+  color: #ffc107;
+  font-size: 16px;
 }
 
 @media (max-width: 575px) {
-
   #footer .copyright,
   #footer .credits {
     float: none;
