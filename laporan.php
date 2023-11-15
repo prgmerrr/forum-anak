@@ -1,168 +1,440 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <title>Pelaporan Masalah</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!--style css-->
     <style>
-        /* Gaya dasar */
-        body {
-            font-family: 'Arial, sans-serif';
-            background-color: #5C5470; /* Warna latar belakang pastel kuning */
-            margin: 0;
-            padding: 0;
-            text-align: center;
-        }
+        * {
+    margin: 0;
+    padding: 0;
+}
 
-        .container {
-            color: #57465F; /* Warna teks ungu tua */
-            max-width: 600px;
-            background-color: #F5E8C7; /* Warna latar belakang pastel merah muda */
-            padding: 20px;
-            border: 1px solid #F5E8C7;
-            border-radius: 10px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            margin: 50px auto;
-            justify-content: space-between;
-            /* Tengahkan kontainer di layar PC */
-        }
 
-        h1 {
-            color: #000; /* Warna teks ungu tua */
-            font-size: 24px;
-            margin-top: 20px;
-        }
+body {
+    background-color: #ffffff94;
+    overflow: auto; /* atau overflow: scroll; */
+}
 
-        form {
-            color: #5C8374; /* Warna teks ungu tua */
-            margin-top: 20px;
-        }
 
-        label,
-        input,
+.cloud {
+    margin-top: -6rem;
+    margin-left: -4rem;
+}
+
+.cloud2 {
+    margin-top: -16rem;
+    margin-left: 29rem; 
+    
+}
+.form-image {
+    margin-left: 165px;
+    margin-top: 1rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+}
+.form-container {
+    border-radius: 10px;
+    width: 25rem;
+    height: 32rem;
+    margin: 0 auto; 
+    margin-top: -6rem; /* Adjust the top margin as needed */
+    background-color: #FBECB2;
+    box-shadow: 1px 1px 6px #716e66;
+}
+
+.form-title {
+    margin-top: -18rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    margin-top: px;
+    text-align: center;
+    color: #000;
+    line-height: 100px;
+}
+
+.form-input {
+    width: 350px;
+    height: 36px;
+    margin-left: 20px;
+    margin-top: 8px;
+    border: 2px solid #e1e1e1;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.562);
+    border-radius: 5px;
+}
+
+.judul {
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    margin-left: 170px;
+}
+
+
+.form-textarea {
+    width: 350px;
+    height: 110px;
+    margin-left: 20px;
+    margin-top: 19px;
+    border: 2px solid #e1e1e1;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.562);
+    border-radius: 5px;
+}
+
+
+.isi {
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    margin-left: 160px;
+    display: block; /* Menjadikan label "isi" sebagai elemen blok */
+    margin-top: 10px; /* Mengatur jarak atas dari label "isi" */
+}
+
+.form-button {
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    margin-top: 1rem;
+    margin-left: 159px;
+    padding: 10px 16px;
+    background-color: #ffd323;
+    box-shadow: 3px 2px 2px rgb(249, 175, 0);
+    border: none;
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cit-foot {
+   margin-top: 14px;
+}
+
+.cit-foot img {
+    margin-bottom: -5px;
+}
+
+.footer1 {
+    background-color: rgb(136, 234, 31);
+    width: 80rem;
+    height: 4rem;
+}
+
+
+.social-icons {
+    position: fixed;
+    top: 35rem;
+    left: 19rem;
+    display: flex;
+    align-items: center;
+}
+
+.social-icons a {
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 2px solid white;
+    text-decoration: none;
+    color: #ffffff; /* Ganti dengan warna ikon yang diinginkan */
+    transition: black 0.3s, color 0.3s; /* Efek transisi */
+}
+
+.social-icons a:hover {
+    background-color: white; /* Warna latar saat dihover */
+    color: #333; /* Warna ikon saat dihover */
+}
+
+.social-icons a i {
+    font-size: 18px; /* Sesuaikan ukuran ikon sesuai kebutuhan */
+}
+
+.copyright {
+    font-family: "Poppins", sans-serif;
+    font-weight: small;
+    position: fixed;
+    bottom: 15px;
+    font-size: 20px;
+    left: 10px;
+    color: rgb(255, 255, 255); /* Ganti dengan warna yang diinginkan */
+}
+
+  
+
+/*-------------------- TAMBAHAN CSS RAFI --------------------*/
+label,
+input,
+textarea {
+    text-align:center;
+    display: block;
+    margin-bottom: 5px;
+    color: #000; /* Warna teks ungu tua */
+    }
+
+
+    input[type="text"],
         textarea {
-            text-align:center;
-            display: block;
-            margin-bottom: 15px;
-            color: #000; /* Warna teks ungu tua */
-        }
-
-        input[type="text"],
-        textarea {
-            width: 100%;
-            padding-bottom: 20px;
-            border: 1px solid #9E8371; /* Warna garis pemisah pastel merah tua */
+            width: 75%;
+            padding-bottom: 2px;
+            border: 2px solid #9E8371; /* Warna garis pemisah pastel merah tua */
             border-radius: 5px;
             font-size: 16px;
+            margin-left: auto;
+            margin-right: auto;
         }
 
-        input[type="checkbox"] {
-            display: none;
-            margin:0 auto 0 auto;
+    #kasus {
+            color:#000;
+            background-color: #ffd323;
+            border-radius:5px;
+            margin-left: 43%;
+            margin-bottom: 15px;
         }
 
-        input[type="checkbox"] + label {
-            position: relative;
-            cursor: pointer;
-        }
+        /* check box*/
+        /* Tambahkan aturan CSS untuk checkbox */
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px; /* Sesuaikan dengan jarak yang diinginkan */
+}
 
-        input[type="checkbox"] + label::before {
-            margin:40px 17.5rem 0 17.5rem;
-            content: '';
-            position: absolute;
-            left: 0;
-            top: 0;
-            width: 20px;
-            height: 20px;
-            border: 2px solid #000; /* Warna border checkbox */
-            background-color: #fff; /* Warna latar belakang checkbox */
-        }
+/* Styling tambahan untuk checkbox */
+input[type="checkbox"] {
+    cursor: pointer;
+    margin-right: 5px; /* Sesuaikan dengan jarak yang diinginkan antara checkbox dan teks */
+}
 
-        input[type="checkbox"]:checked + label::before {
-            background-color: #5C8374; /* Warna latar belakang checkbox saat checked */
-            border: 2px solid #5C8374; /* Warna border checkbox saat checked */
-        }
 
-        input[type="submit"] {
-            background-color: #5C8374; /* Warna latar belakang oranye terang */
+input[type="submit"] {
+            background-color: #ffc107; /* Warna latar belakang oranye terang */
             color: #fff;
             padding: 10px 20px;
             border: none;
             border-radius: 5px;
             cursor: pointer;
-            width: 100%;
-            margin-top: 65px
+            width: 75%;
+            margin: 15px auto ;
+        
         }
 
         input[type="submit"]:hover {
-            background-color: #183D3D; /* Warna latar belakang oranye gelap (hover) */
+            background-color: #b8942a; /* Warna latar belakang oranye gelap (hover) */
         }
 
-        .success-message {
-            background-color: #4CAF50;
-            color: white;
-            text-align: center;
-            padding: 10px;
-            border-radius: 5px;
-            margin-top: 10px;
-        }
 
-        /* Gaya tambahan untuk tema anak-anak */
-        .child-image {
-            max-width: 250px;
-            height: 250px;
-            border-radius: 15px;
-        }
 
-        .container {
-            margin-top: 50px;
-        }
+        /*RESPONSIF DI HP*/
+        @media only screen and (max-width: 768px) {
+    .cloud {
+        margin-top: -9rem;
+        margin-right: auto;
+        margin-left: -2rem;
+    }
 
-        input:active {
-            color: #F8CF2C; /* Warna teks saat aktif */
-        }
+    .cloud2 {
+        display: none;
+    }
 
-        #anonimus {
-            margin: 0 auto;
-            width: 30px;
-            height: 30px;
-        }
+    .form-image {
+        margin-top: 10px;
+        margin-left: 100px;
+    }
 
-        #kasus {
-            color:#fff;
-            background-color: #5C8374;
-            border-radius:5px;
-        }
+    .judul {
+        line-height: 27px;
+        margin-left: 108px;
+    }
 
-        /* Menggunakan media query untuk layar berukuran kecil (seperti pada perangkat seluler) */
-        @media (max-width: 768px) {
-            .asu {
-                margin-top: 20px; /* Mengurangi margin atas pada layar berukuran kecil */
-            }
-        }
+    .isi {
+        margin-left: 95px;
+    }
 
-        /* Menggunakan media query untuk layar berukuran besar (seperti pada komputer) */
-        @media (min-width: 769px) {
-            .asu {
-                margin-top: 50px; /* Menjaga margin atas pada layar berukuran besar */
-            }
-        }
+    .form-container {
+        width: 90%;
+        height: 38rem;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: -9rem;
+    }
+
+    .form-title {
+        font-size: 20px;
+        margin-top: -2rem;
+        margin-left: 100;
+    }
+
+    .form-input,
+    .form-textarea {
+        width: 90%;
+        margin-left: 10px;
+    }
+
+    .form-textarea {
+        margin-top: 8px;
+    }
+
+    .form-button {
+        margin-left: 100px;
+    }
+
+    .cit-foot {
+        width: 100%; /* Sesuaikan lebar gambar */
+        height: 3rem;
+        margin-top: 20px; /* Sesuaikan dengan kebutuhan untuk menempatkanny */
+    }
+    .social-icons {
+        top: 95%;
+        left: 83%;
+        transform: translateX(-50%);
+    }
+
+    .social-icons a {
+        width: 20px;
+        height: 20px;
+    }
+
+    .footer1 {
+        background-color: rgb(136, 234, 31);
+        margin-top: 10px;
+        padding: 1px;
+        text-align: center;
+        position: relative;
+    }
+    .copyright {
+        font-size: 13px;
+        bottom: 11px;
+        left: 33%;
+        transform: translateX(-50%);
+    }
+}
+
+
+/*RESPONSIF IPAD*/ 
+@media only screen and (max-width: 810px) {
+    .cont-foto{
+        display: flex;
+    }
+    
+    
+    .cloud {
+        margin-top: -9rem;
+        margin-left: -2rem;
+        
+    }
+
+    .cloud2{
+        margin-top: -16rem;
+        margin-left: 12rem;
+    }
+
+    .form-image {
+        margin-top: 10px;
+        margin-left: 100px;
+    }
+
+    .judul {
+        line-height: 27px;
+        margin-left: 108px;
+    }
+
+    .isi {
+        margin-left: 95px;
+    }
+
+    .form-container {
+        width: 90%;
+        height: 38rem;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: -9rem;
+    }
+
+    .form-title {
+        font-size: 20px;
+        margin-top: -2rem;
+        margin-left: 100;
+    }
+
+    .form-input,
+    .form-textarea {
+        width: 90%;
+        margin-left: 10px;
+    }
+
+    .form-textarea {
+        margin-top: 8px;
+    }
+
+    .form-button {
+        margin-left: 100px;
+    }
+
+    .cit-foot {
+        width: 100%; /* Sesuaikan lebar gambar */
+        height: 3rem;
+        margin-top: 20px; /* Sesuaikan dengan kebutuhan untuk menempatkanny */
+    }
+    .social-icons {
+        top: 95%;
+        left: 83%;
+        transform: translateX(-50%);
+    }
+
+    .social-icons a {
+        width: 20px;
+        height: 20px;
+    }
+
+    .footer1 {
+        background-color: rgb(136, 234, 31);
+        margin-top: 10px;
+        padding: 1px;
+        text-align: center;
+        position: relative;
+    }
+    .copyright {
+        font-size: 13px;
+        bottom: 11px;
+        left: 33%;
+        transform: translateX(-50%);
+    }
+}
+
+
     </style>
 </head>
-
 <body>
-    <div style="margin-top: 50px;" class="container asu">
-        <!-- Tambahkan gambar anak-anak di sini -->
-        <img class="child-image" src="img/logo.png" alt="Anak-anak bahagia">
-        <h1>Pelaporan Masalah</h1>
-        <form action="" method="post">
-            <label for="kasus">Pilih Kasus:</label>
+    <div id= "cont-foto">
+        <div class="cloud">
+            <img class="cloud" src="arpirasinew/img/awan-removebg-preview.png" width="500" height="500">
+        </div>
+        <div class="cloud2">
+            <img class="cloud2" src="arpirasinew/img/awan2-removebg-preview.png" width="500" height="500">
+        </div>  
+    </div>
+    
+
+    <div class="form-container">
+
+        <h2 class="form-title">Pelaporan Masalah</h2>
+        <form action="" method="post" enctype="">
+        <label for="kasus">Pilih Kasus:</label>
             <select id="kasus" name="kasus">
                 <option value="ringan">Ringan</option>
                 <option value="serius">Serius</option>
             </select>
-
+            
             <label for="nama">Nama (Opsional):</label>
             <input type="text" id="nama" name="nama">
             <label for="kontak">Kontak yang bisa dihubungi:</label>
@@ -171,11 +443,21 @@
             <textarea id="laporan" name="laporan" required></textarea>
             <label for="alamat">Lokasi</label>
             <textarea id="alamat" name="alamat" required></textarea>
-            <input type="checkbox" id="anonimus" name="anonimus">
-            <label for="anonimus">Laporkan secara anonimus</label>
+
+
+    <!-- Tambahkan class "checkbox-container" -->
+    <div class="checkbox-container">
+        <input type="checkbox" id="anonimus" name="anonimus">
+        <label for="anonimus">Laporkan secara anonymous ?</label>
+    </div>
+
             <input type="submit" id="submit" value="Kirim Laporan">
         </form>
     </div>
-</body>
 
+    <div class="cit-foot">
+        <img class="cit-foot" src="arpirasinew/img/WhatsApp Image 2023-11-08 at 11.21.25_1e9607eb.jpg">
+    </div>
+
+</body>
 </html>
