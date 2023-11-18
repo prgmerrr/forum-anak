@@ -1,0 +1,381 @@
+/* font */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Onest:wght@100&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow-x: hidden; /* Menghilangkan kemampuan geser horizontal */
+  overflow-y: scroll; /* Membuat halaman hanya dapat digulirkan secara vertikal */
+}
+
+
+ 
+
+/* HEADER */
+.header {
+  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white;
+    color: #fdce20;
+  }
+  
+  /* Logo */
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: #fdce20;
+  }
+  
+  .logo-foranggis {
+    width: 60px;
+    height: auto;
+    margin-left: 15px;
+  }
+  
+  .foranggis-text {
+    font-size: 30px;
+    font-family: "Open Sans", sans-serif;
+  }
+  
+  /* Navigation Bar */
+  .navbar {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+  }
+  
+  .navbar-nav {
+    display: flex;
+    align-items: center;
+    margin: 0 20px 0 0;
+  }
+  
+  .navbar-nav a {
+    font-size: 20px;
+    font-family: "Open Sans", sans-serif;
+    text-decoration: none;
+    color: #fdce20;
+    margin-right: 20px;
+  }
+  
+  .icon {
+    margin: 0 5px 0 0;
+  }
+  
+  .icon :hover {
+    color: #a88b18;
+    transition: 0.3s;
+  }
+  
+  .nav {
+    display: inline-block;
+    margin-right: 20px;
+    justify-content: space-between;
+  }
+  
+  .foranggis-nav,
+  .kids-nav,
+  .social-nav {
+    border: 2px solid transparent;
+    padding: 3px;
+    border-radius: 15px;
+    margin: 1px;
+    transition: 0.3s;
+  }
+  
+  .foranggis-nav:hover,
+  .kids-nav:hover,
+  .social-nav:hover {
+    color: #a88b18;
+    border-color: #a88b18; /* Warna garis saat dihover */
+  }
+  
+  /* SEARCH FORM */
+  #search-form {
+    position: relative;
+    margin: 0 150px;
+  }
+  
+  #search-form input.search {
+    background-color: #22668d;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    width: 195px;
+    height: 35px;
+    padding: 5px 30px 5px 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  #search-form label {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #fdce20;
+  }
+  
+  #search-form label :hover {
+    color: #a88b18;
+    transition: 0.3s;
+  }
+  
+  /* Menu Icon */
+  #menu {
+   
+    font-size: 24px;
+    color: #fdce20;
+    cursor: pointer;
+  }
+
+  /* slider home */
+.container {
+	padding: 2rem;
+ 
+}
+
+.slider-wrapper {
+	position: relative;
+	max-width: 48rem;
+	margin: 0 auto;
+}
+
+.slider {
+	display: flex;
+  margin-top: -2rem;
+  margin-left: -16rem;
+  width: 80rem;
+  height: 550px;
+	overflow-x: auto;
+	scroll-snap-type: x mandatory;
+	scroll-behavior: smooth;
+	border-radius: 1px;
+	-ms-overflow-style: none; /* Hide scrollbar IE and Edge */
+	scrollbar-width: none; /* Hide scrollbar Firefox */
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.slider::-webkit-scrollbar {
+	display: none;
+}
+
+.slider img {
+	flex: 1 0 100%;
+	scroll-snap-align: start;
+	object-fit: cover;
+}
+
+.slider-nav {
+	display: flex;
+	column-gap: 1rem;
+	position: absolute;
+	bottom: 1.25rem;
+  top: 32rem;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.slider-nav a {
+	width: 0.5rem;
+	height: 0.5rem;
+	border-radius: 50%;
+	background-color: #ffffff;
+	opacity: 0.75;
+	transition: opacity ease 250ms;
+}
+
+.slider-nav a:hover {
+	opacity: 1;
+  background-color: rgb(255, 221, 0);
+}
+
+/* awan */ 
+
+.awankiri {
+  margin-top: -11rem;
+  margin-left: -16rem;
+}
+
+.awankanan {
+  margin-top: -24rem;
+  margin-left: 23rem;
+}
+
+.kertas {
+  margin-top: -15rem;
+}
+
+.kidsvoice {
+  margin-top: -55rem;
+  margin-left: 157px
+}
+
+.komen {
+  height: 30rem;
+  margin-top: -5rem;
+  margin-left: -7rem;
+}
+
+.h1chi {
+  font-family: 'Poppins', sans-serif;
+  color: #ffd25e;
+  -webkit-text-stroke: 2px rgb(176, 70, 0); 
+  font-size: 50px;
+  font-weight: bold;
+  margin-top: -24rem;
+  margin-left: 31rem;
+}
+
+.pchi {
+  font-family: 'Poppins', sans-serif;
+  color: #ffd25e;
+  -webkit-text-stroke: 2px rgb(176, 70, 0); 
+  font-size: 31px;
+  font-weight: bold;
+  margin-left: 31rem;
+}
+
+.text-box {
+  color: white;
+}
+
+.buttonkid {
+  margin-top: -42px;
+  margin-left: -1rem;
+}
+
+.buttonkids {
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  background-color: #d61515;
+  box-shadow: 0 2px 0 2px #7f0500;
+  margin-left: 40rem;
+  padding: 10px 23px;
+}
+
+.speaker {
+  height: 30rem;
+  margin-top: -5rem;
+  margin-left: 18rem;
+}
+
+.speakerd {
+  height: 33rem;
+  margin-top: -4rem;
+  margin-left: 16rem;
+}
+
+.h1asp {
+  font-family: 'Poppins', sans-serif;
+  color: #ffd25e;
+  -webkit-text-stroke: 2px rgb(176, 70, 0); 
+  font-size: 50px;
+  font-weight: bold;
+  margin-top: -24rem;
+  margin-left: -16rem;
+}
+
+.pasp {
+  font-family: 'Poppins', sans-serif;
+  color: #ffd25e;
+  -webkit-text-stroke: 2px rgb(176, 70, 0); 
+  font-size: 31px;
+  font-weight: bold;
+  margin-right: 22rem;
+  margin-left: -16rem;
+}
+
+.text-box-asp {
+  color: white;
+}
+
+.buttonkidasp {
+  margin-top: -42px;
+  margin-left: -1rem;
+}
+
+.buttonkidsasp {
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  background-color: #d61515;
+  box-shadow: 0 2px 0 2px #7f0500;
+  margin-left: 10rem;
+  padding: 10px 23px;
+}
+
+.footercl {
+  margin-top: -5rem;
+  margin-bottom: -1rem;
+  width: 80rem;
+  height: 22rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+
+.pass {
+  font-family: 'Onest', sans-serif;;
+  color: white;
+  letter-spacing: 3px;
+  margin-top: -11rem;
+  margin-left: 60rem;
+}
+
+input[type="password"] {
+  width: 200px;
+  padding: 8px;
+  border: 2px solid #ffffff;
+  background-color: transparent;
+  border-radius: 10px;
+  margin-left: 60rem;
+  margin-top: 10px;
+}
+
+.butfot {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  width: 5rem;
+  height: 2rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #d61515;
+  box-shadow: 0 2px 0 2px #7f0500;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 15px;
+  margin-left: 60rem;
+}
+
+
+input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+
+
