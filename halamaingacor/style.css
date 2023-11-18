@@ -268,7 +268,8 @@ body {
   border: none;
   background-color: #d61515;
   box-shadow: 0 2px 0 2px #7f0500;
-  margin-left: 40rem;
+  margin-top: 3rem;
+  margin-left: 32rem;
   padding: 10px 23px;
 }
 
@@ -327,11 +328,21 @@ body {
 }
 
 .footercl {
-  margin-top: -5rem;
+  margin-top: -8rem;
   margin-bottom: -1rem;
   width: 80rem;
-  height: 22rem;
+  height: auto;
 }
+
+.logonya{
+  width:50px;
+  height: 50px;
+  margin-top: -10rem;
+  margin-bottom: 20px;
+  margin-left: 50%;
+  margin-right: 50%;
+}
+
 
 form {
   display: flex;
@@ -376,6 +387,5 @@ input[type="password"] {
 input[type="submit"]:hover {
   background-color: #0056b3;
 }
-
 
 
