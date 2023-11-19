@@ -1,0 +1,623 @@
+/* font */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Onest:wght@100&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow-x: hidden; /* Menghilangkan kemampuan geser horizontal */
+  overflow-y: scroll; /* Membuat halaman hanya dapat digulirkan secara vertikal */
+}
+
+
+
+.navbar {
+  position: sticky !important;
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+}
+.navbar-brand img {
+  margin-right: 2px !important; /* Atur jarak antara logo dan teks */
+} 
+.navbar-brand {
+  font-family: 'Poppins', sans-serif !important;
+  color: #ffeb88 !important;
+  font-weight: 600 !important;
+  margin-top: -85rem !important;
+  margin-left: 1rem !important;
+  display: flex !important;
+  align-items: center !important;
+}
+
+.search-container {
+  margin-top: -85rem !important;
+  margin-left: 4rem !important;
+  display: flex !important;
+  align-items: center !important;
+  flex-grow: 1 !important;
+  justify-content: center !important;
+}
+
+.search-input {
+  color: white !important;
+  margin-top: 6px !important;
+  background-color: rgba(255, 255, 255, 0);
+  outline: none !important;
+  flex: 1 !important;
+  width: 180px !important; /* Reducing the width */
+  height: 37px !important;
+  padding: 0 6px !important; /* Adjusting the padding */
+  border-radius: 10px !important;
+  border: 1px solid rgb(255, 255, 255) !important; /* Menambah border biru */
+}
+
+.search-icon {
+  cursor: pointer;
+  color: #ffde59 !important;
+  margin-left: 50rem !important;
+}
+
+.search-container i {
+  margin-top: 8px !important;
+  margin-left: -52rem !important;
+}
+
+.search-and-links {
+  display: flex !important;
+  align-items: center !important;
+}
+
+.links {
+  cursor: pointer;
+  margin-top: -85rem !important;
+  margin-left: 47rem !important;
+  display: flex !important;
+  gap: 40px !important;
+}
+
+.links a {
+  text-decoration: none !important;
+  font-family: 'Poppins', sans-serif !important;
+  color: #ffeb88 !important;
+}
+
+.carousel-caption h1 {
+ color: #ffde59;
+ margin-top: -27rem !important;
+ margin-left: -27rem !important;
+ font-size: 3rem !important;
+}
+
+.carousel-caption p {
+  color: #ffde59;
+  margin-left: -4rem !important;
+  text-align: left !important;
+  font-size: 18px !important;
+  line-height: 1.2 !important; /* Mengatur jarak antar baris agar terlihat teratur */
+}
+
+
+.icon-container {
+  width: fit-content; /* agar kontainer hanya selebar isinya */
+  margin-left: -3rem;
+}
+
+.bx {
+  color: #ffde36;
+  font-size: 90px; /* Ubah ukuran ikon sesuai kebutuhan */
+  display: block; /* Membuat ikon menjadi block element */
+  float: left; /* Menggunakan float untuk menyusun ikon */
+  margin-right: 20px; /* Memberi ruang antara ikon */
+}
+
+.homemin {
+  display: none;
+  margin-top: -1084px;
+  margin-left: 27rem;
+}
+
+.carousel-control-prev,
+.carousel-control-prev-icon,
+.carousel-control-next,
+.carousel-control-next-icon {
+  width: auto; /* agar lebar tombol disesuaikan dengan isi */
+  padding: 0; /* Hapus padding yang ada */
+  margin: 0; /* Hapus margin yang ada */
+}
+
+.carousel.slide .carousel-indicators  button{
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+}
+
+/* awan */ 
+
+.awankiri {
+  position: absolute;
+  top: 33rem;
+  left: 0;
+  /* Sesuaikan dengan ukuran dan posisi yang diinginkan */
+  z-index: 999; /* Agar foto tampil di atas konten lainnya */
+}
+
+.awankanan {
+  position: absolute;
+  top: 32rem;
+  right: 0;
+  /* Sesuaikan dengan ukuran dan posisi yang diinginkan */
+  z-index: 999; /* Agar foto tampil di atas konten lainnya */
+}
+
+
+.kertas {
+  margin-top: -1rem;
+}
+
+.kidsvoice {
+  margin-top: -46rem;
+  margin-left: 157px
+}
+
+.komen {
+  height: 30rem;
+  margin-top: -10rem;
+  margin-left: -7rem;
+}
+
+.h1chi {
+  font-family: 'Poppins', sans-serif;
+  color: #ffd25e;
+  -webkit-text-stroke: 2px rgb(176, 70, 0); 
+  font-size: 50px;
+  font-weight: bold;
+  margin-top: -24rem;
+  margin-left: 31rem;
+}
+
+.pchi {
+  font-family: 'Poppins', sans-serif;
+  color: rgb(176, 70, 0);
+  font-size: 31px;
+  font-weight: 600;
+  margin-left: 31rem;
+}
+
+.text-box {
+  color: white;
+}
+
+.buttonkid {
+  margin-top: -60px;
+  margin-left: -1rem;
+}
+
+.buttonkids {
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  background-color: #d61515;
+  box-shadow: 0 2px 0 2px #7f0500;
+  margin-left: 40rem;
+  padding: 10px 23px;
+}
+
+.speaker {
+  height: 30rem;
+  margin-top: -14rem;
+  margin-left: 18rem;
+}
+
+.speakerd {
+  height: 33rem;
+  margin-top: -4rem;
+  margin-left: 16rem;
+}
+
+.h1asp {
+  font-family: 'Poppins', sans-serif;
+  color: #ffd25e;
+  -webkit-text-stroke: 2px rgb(176, 70, 0); 
+  font-size: 50px;
+  font-weight: bold;
+  margin-top: -24rem;
+  margin-left: -16rem;
+}
+
+.pasp {
+  font-family: 'Poppins', sans-serif;
+  color: rgb(176, 70, 0);
+  font-size: 31px;
+  font-weight: 600;
+  margin-right: 22rem;
+  margin-left: -16rem;
+}
+
+.text-box-asp {
+  color: white;
+}
+
+.buttonkidasp {
+  margin-top: -59px;
+  margin-left: -1rem;
+}
+
+.buttonkidsasp {
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  background-color: #d61515;
+  box-shadow: 0 2px 0 2px #7f0500;
+  margin-left: 10rem;
+  padding: 10px 23px;
+}
+
+.footercl {
+  margin-top: -5rem;
+  margin-bottom: -2rem;
+  width: 80rem;
+  height: 23rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+
+.pass {
+  font-family: 'Onest', sans-serif;
+  color: white;
+  letter-spacing: 3px;
+  margin-top: -10rem;
+  margin-left: 60rem;
+}
+
+input[type="password"] {
+  width: 200px;
+  padding: 8px;
+  border: 2px solid #ffffff;
+  background-color: transparent;
+  border-radius: 10px;
+  margin-left: 60rem;
+  margin-top: 10px;
+}
+
+.butfot {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  width: 5rem;
+  height: 2rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #d61515;
+  box-shadow: 0 2px 0 2px #7f0500;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 15px;
+  margin-left: 60rem;
+}
+
+
+input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+.icon-footer {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: -64em;
+  flex-direction: column-reverse; /* Membalikkan urutan elemen dalam flexbox */
+  align-items: flex-end;
+  color: white; /* Warna teks */
+  padding: 20px;
+  margin-top: 105px;
+  bottom: 0;
+  left: 1rem;
+  width: 100%;
+}
+footer h3 {
+  font-family: 'Onest', sans-serif;
+  font-size: 24px;
+  letter-spacing: 2px;
+  color: white;
+  margin-top: -153px;
+  margin-left: 2rem;
+}
+.contact-icons {
+  display: flex;
+  align-items: center;
+}
+
+.icon-link i {
+  margin-left: 1px;
+  margin-top: -7rem;
+  color: white; /* Warna ikon */
+  border: 2px solid white; /* Border putih dengan ketebalan 2px */
+  border-radius: 50%; /* Membuat border menjadi bulat */
+  font-size: 30px; /* Ukuran ikon */
+  padding: 4px; /* Memberikan ruang antara ikon dan border */
+}
+
+/* Untuk ikon Instagram */
+.bx.bxl-instagram {
+  color: rgb(0, 0, 0);
+  background-color: white; /* Atur latar belakang menjadi putih */
+  padding: 5px; /* Memberikan sedikit ruang di sekitar ikon */
+  border-radius: 50%; /* Membuat ikon menjadi bulat */
+}
+
+/* Untuk ikon Facebook */
+.bx.bxl-facebook {
+  color: rgb(0, 0, 0);
+  background-color: white; /* Atur latar belakang menjadi putih */
+  padding: 5px; /* Memberikan sedikit ruang di sekitar ikon */
+  border-radius: 50%; /* Membuat ikon menjadi bulat */
+}
+
+/* break points */
+
+@media screen and (max-width: 768px) {
+* {
+  margin-bottom: 0px;
+  padding: 0;
+}
+
+.icon-container {
+  margin-top: -5rem;
+  margin-left: -7px;
+}
+
+
+
+
+
+.don {
+  margin-top: -1px;
+  margin-left: -10rem;
+}
+.footer {
+  position: absolute;
+  bottom: -60%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9999;
+  /* Atur properti lain yang sesuai untuk tampilan HP */
+}
+
+  footer h3 {
+    margin-top: 10rem;
+  }
+
+  .con {
+    margin-top: 395px;
+    z-index: 10000; /* Angka yang lebih besar dari z-index footer */
+    position: relative;
+  }
+
+  .speaker {
+    /* Properti yang telah diubah sebelumnya */
+    height: 10rem; /* Mengurangi tinggi gambar */
+    width: auto; /* Mengubah lebar agar proporsional */
+    margin-top: -15rem; /* Menyesuaikan margin atas */
+    margin-left: -6rem; /* Mengatur margin kiri */
+    margin-right: auto; /* Mengatur margin kanan */
+    left: 50%; /* Posisikan di tengah */
+    transform: translateX(-50%); /* Geser ke kiri sebesar setengah dari lebar elemen */
+    position: relative; /* Mengubah posisi kembali menjadi relatif */
+    z-index: 1; /* Tetapkan z-index agar di atas pasp */
+  }
+
+  .buttonkidasp {
+    margin-top: 125px;
+    margin-left: 1rem;
+    padding: 5px 15px;
+    position: relative; /* Gunakan posisi relatif */
+  }
+  .buttonkidsasp {
+    padding: 5px 15px;
+  }
+
+
+  .pasp {
+    font-family: 'Poppins', sans-serif;
+    color: rgb(176, 70, 0);
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: -40px; /* Sesuaikan jarak dari button */
+    margin-left: 11rem; /* Sesuaikan jarak dari kiri */
+    position: absolute; /* Gunakan posisi absolut */
+    top: 100%; /* Posisi di bagian bawah button */
+    left: 0; /* Posisi di bagian kiri */
+  }
+
+
+  .h1asp {  
+    font-family: 'Poppins', sans-serif;
+    color: #ffd25e;
+    -webkit-text-stroke: 2px rgb(176, 70, 0); 
+    font-size: 34px;
+    font-weight: bold;
+    margin-top: -24rem;
+    margin-left: 11rem;
+  }
+
+  
+
+  .buttonkid {
+    margin-top: -50px;
+    margin-left: -1rem;
+  }
+  
+  .buttonkids {
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    background-color: #d61515;
+    box-shadow: 0 2px 0 2px #7f0500;
+    margin-left: 35rem;
+    padding: 5px 15px;
+  }
+
+  .h1chi {
+    font-family: 'Poppins', sans-serif;
+    color: #ffd25e;
+    -webkit-text-stroke: 2px rgb(176, 70, 0); 
+    font-size: 39px;
+    font-weight: bold;
+    margin-top: -19rem;
+    margin-left: 24rem;
+  }
+
+  .pchi {
+    font-family: 'Poppins', sans-serif;
+    color: rgb(176, 70, 0);
+    margin-top: -10px;
+    font-size: 23px;
+    font-weight: bold;
+    margin-left: 24rem;
+  }
+
+  .komen {
+    height: 25rem;
+    margin-top: -12rem;
+    margin-left: -107px;
+  }
+
+  .kidsvoice {
+    margin-top: -46rem;
+    margin-left: 28px
+  }
+  
+
+  .awankiri {
+    position: absolute;
+    top: 15rem;
+    left: -1rem;
+    /* Sesuaikan dengan ukuran dan posisi yang diinginkan */
+    z-index: 999; /* Agar foto tampil di atas konten lainnya */
+  }
+  
+  .awankanan {
+    position: absolute;
+    top: 15rem;
+    right: -1rem;
+    /* Sesuaikan dengan ukuran dan posisi yang diinginkan */
+    z-index: 999; /* Agar foto tampil di atas konten lainnya */
+  }
+
+  .search-container {
+    margin-top: -27rem !important; /* Atur margin atas */
+    margin-left: -10rem !important; /* Posisi di tengah */
+    margin-right: auto !important; /* Posisi di tengah */
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    position: absolute !important;
+    top: 10px; /* Posisi di bagian atas */
+    left: 0;
+    right: 0;
+  }
+
+  .search-input {
+    color: white !important;
+    margin-top: 6px !important;
+    background-color: rgba(255, 255, 255, 0);
+    outline: none !important;
+    flex: 1 !important;
+    max-width: 180px !important; /* Maksimum lebar input */
+    height: 37px !important;
+    padding: 0 6px !important;
+    border-radius: 10px !important;
+    border: 1px solid rgb(255, 255, 255) !important;
+  }
+
+  .search-icon {
+    cursor: pointer;
+    color: #ffde59 !important;
+    margin-left: -10px !important; /* Sesuaikan jarak ikon */
+  }
+
+  .search-container i {
+    margin-top: 8px !important;
+    margin-left: -20px !important; /* Sesuaikan jarak ikon */
+  }
+
+  .search-and-links {
+    display: flex !important;
+    align-items: center !important;
+  }
+
+
+ 
+
+  .navbar-brand {
+    font-family: 'Poppins', sans-serif !important;
+    color: #ffeb88 !important;
+    font-weight: 600 !important;
+    margin-top: -27rem !important; /* Atur margin atas */
+    margin-left: 10px !important; /* Atur margin kiri */
+    position: absolute !important; /* Gunakan posisi absolut */
+    top: 10px; /* Posisi di bagian atas */
+    left: 10px; /* Posisi di bagian kiri */
+    display: flex !important;
+    align-items: center !important;
+  }
+
+  .navbar-brand img {
+    margin-right: 2px !important; /* Atur jarak antara logo dan teks */
+  }
+
+  .carousel-caption h1 {
+    font-weight: bold !important;
+    margin-top: -190px !important; /* Atur posisi teks h1 di atas indikator */
+    margin-left: -86px !important; /* Atur margin kiri agar teks rata kiri */
+    text-align: center; /* Pusatkan teks */
+    font-size: 30px !important; /* Ukuran teks h1 yang lebih kecil */
+    width: 100%; /* Lebar konten */
+    left: 0; /* Posisi horizontal dari konten */
+    transform: translateX(0); /* Reset posisi horizontal */
+    position: absolute; /* Menggunakan posisi absolut untuk pengaturan yang lebih tepat */
+    top: 50%; /* Posisikan ke bagian tengah vertikal */
+    transform: translateY(-50%); /* Geser ke atas sebesar setengah dari tinggi elemen */
+  }
+
+  .carousel-caption p {
+    font-size: 18px !important;
+    line-height: 1.2 !important;
+    bottom: 6rem !important; /* Atur posisi teks p di bawah indikator */
+    margin-left: -10px !important; /* Atur margin kiri agar teks rata kiri */
+    text-align: left; /* Pusatkan teks */
+    font-size: 12px; /* Ukuran teks p yang lebih kecil */
+    width: 100%; /* Lebar konten */
+    left: 0; /* Posisi horizontal dari konten */
+    transform: translateX(0); /* Reset posisi horizontal */
+    position: absolute; /* Menggunakan posisi absolut untuk pengaturan yang lebih tepat */
+    bottom: 10px; /* Geser ke atas sejauh 10px dari bawah */
+  }
+
+  .icon-container i {
+    font-size: 20px !important; /* Ukuran ikon yang lebih kecil */
+    margin-top: 5px; /* Jarak atas ikon yang lebih kecil */
+  }
+
+}
+
+
+
+
+
