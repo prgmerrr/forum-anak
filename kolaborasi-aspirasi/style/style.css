@@ -1,0 +1,247 @@
+body {
+  background-color: #ffffff;
+
+
+}
+
+:root {
+  --main-bg-color: #22668d;
+  --text-color: #fdce20;
+  --primary: #f8cf2c;
+}
+
+.bg-atas {
+  background-color: #22668d;
+  border: #22668d;
+  border-radius: 34px;
+}
+
+/* HEADER */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #22668d;
+  color: #fdce20;
+  border-radius: 34px;
+}
+
+/* Logo */
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: #fdce20;
+}
+
+.logo-foranggis {
+  width: 60px;
+  height: auto;
+  margin-left: 15px;
+}
+
+.foranggis-text {
+  font-size: 30px;
+  font-family: "Open Sans", sans-serif;
+}
+
+/* Navigation Bar */
+.navbar {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: center;
+  margin: 0 20px 0 0;
+}
+
+.navbar-nav a {
+  font-size: 20px;
+  font-family: "Open Sans", sans-serif;
+  text-decoration: none;
+  color: #fdce20;
+  margin-right: 20px;
+}
+
+.icon {
+  margin: 0 500px 0 0;
+}
+
+.icon :hover {
+  color: #a88b18;
+  transition: 0.3s;
+}
+
+.nav {
+  display: inline-block;
+  margin-right: 20px;
+  justify-content: space-between;
+}
+
+.foranggis-nav,
+.kids-nav,
+.social-nav {
+  border: 2px solid transparent;
+  padding: 3px;
+  border-radius: 15px;
+  margin: 1px;
+  transition: 0.3s;
+}
+
+.foranggis-nav:hover,
+.kids-nav:hover,
+.social-nav:hover {
+  color: #a88b18;
+  border-color: #a88b18;
+  /* Warna garis saat dihover */
+}
+
+/* SEARCH FORM */
+#search-form {
+  position: relative;
+  margin: 0 150px;
+}
+
+#search-form input.search {
+  background-color: #22668d;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  width: 195px;
+  height: 35px;
+  padding: 5px 30px 5px 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#search-form label {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #fdce20;
+}
+
+#search-form label :hover {
+  color: #a88b18;
+  transition: 0.3s;
+}
+
+/* Menu Icon */
+#menu {
+  display: none;
+  font-size: 24px;
+  color: #fdce20;
+  cursor: pointer;
+}
+
+/* navigation bar end */
+
+/* HERO */
+
+.container-isi {
+  text-align: center;
+  margin-top: 200px;
+  padding-bottom: 250px;
+}
+
+.text1 {
+  color: #fdce20;
+  font-size: 54.2px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.text2 {
+  color: #fdce20;
+  text-align: center;
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.our {}
+
+.ouri {
+  margin-top: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ouri img {
+  width: 900px;
+  /* Sesuaikan dengan lebar yang diinginkan */
+  height: auto;
+  /* Menjaga rasio aspek gambar */
+  align-self: flex-start;
+  /* Menggeser gambar ke atas */
+}
+
+.tls-bwh {
+  z-index: 1;
+  color: #22668D;
+}
+
+@media (max-width: 768px) {
+  .ouri img {
+    width: 350px;
+  }
+
+}
+
+
+/* HERO END*/
+
+@media (max-width: 768px) {
+  .navbar {
+    margin-left: auto;
+  }
+
+  .navbar-nav {
+    display: none;
+    margin-left: 0;
+  }
+
+  .navbar a {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  /* menu */
+  /* Tambahkan gaya CSS untuk tampilan menu navigasi pada perangkat seluler */
+
+  #menu {
+    display: block;
+    font-size: 24px;
+    color: #fdce20;
+    cursor: pointer;
+  }
+
+  /* menu END */
+
+  .container-isi {
+    margin-top: 0;
+  }
+
+  .text1 {
+    font-size: 32px;
+  }
+
+  .text2 {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 769px) {
+  #menu {
+    display: none;
+  }
+}
