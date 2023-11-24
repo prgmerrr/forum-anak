@@ -1,8 +1,5 @@
 body {
   background-color: #ffffff;
-
-
-
 }
 
 :root {
@@ -11,15 +8,21 @@ body {
   --primary: #f8cf2c;
 }
 
-
-
-/* HEADER */
-.header {}
-
 .bg-atas {
   background-color: #22668d;
-  border-radius: 20px;
+  border: #22668d;
+  border-radius: 34px;
+}
 
+/* HEADER */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #22668d;
+  color: #fdce20;
+  border-radius: 34px;
 }
 
 /* Logo */
@@ -35,34 +38,42 @@ body {
   color: #fdce20;
 }
 
-
-
 .logo-foranggis {
   width: 60px;
   height: auto;
-  margin-left: 15px;
+  margin-left: 30px;
 }
 
 .foranggis-text {
-  margin-top: 10px;
   font-size: 30px;
   font-family: "Open Sans", sans-serif;
-  font-weight: bold
 }
 
 /* Navigation Bar */
+.navbar {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+  justify-content: space-between;
+}
 
+.navbar-nav {
+  display: flex;
+  align-items: center;
+  margin: 30px 40px 0 0;
+}
 
 .navbar-nav a {
-
+  font-size: 20px;
   font-family: "Open Sans", sans-serif;
   text-decoration: none;
   color: #fdce20;
-
+  margin-right: 20px;
 }
 
 .icon {
-  margin: 10px 5px 0 0;
+  display: flex;
+  margin: -28px 2px 0 400px;
 }
 
 .icon :hover {
@@ -70,47 +81,30 @@ body {
   transition: 0.3s;
 }
 
-.nav-item.active .nav-link {
-  color: white;
-}
-
-.navbar-nav .nav-link {
-  font-size: 25px;
-  padding-right: 20px;
-  position: relative;
-  display: inline-block;
-  transition: all 0.3s ease;
-}
-
-.navbar-nav .nav-link::before {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 42%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-  height: 100%;
-  border: 2px solid transparent;
-  border-radius: 45%;
-  opacity: 0;
-  pointer-events: none;
-  transition: all 0.3s ease;
-  box-sizing: border-box;
-}
-
-.navbar-nav .nav-link:hover::before,
-.navbar-nav .nav-link:focus::before {
-  border-color: #FFDE59;
-  opacity: 1;
-}
-
 .nav {
   display: inline-block;
+  margin-top: auto;
   margin-right: 20px;
   justify-content: space-between;
 }
 
+.foranggis-nav,
+.kids-nav,
+.social-nav {
+  border: 2px solid transparent;
+  padding: 3px;
+  border-radius: 15px;
+  margin: 0 0 0 0;
+  transition: 0.3s;
+}
 
+.foranggis-nav:hover,
+.kids-nav:hover,
+.social-nav:hover {
+  color: #a88b18;
+  border-color: #a88b18;
+  /* Warna garis saat dihover */
+}
 
 /* SEARCH FORM */
 #search-form {
@@ -174,7 +168,8 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
-.our {}
+.our {
+}
 
 .ouri {
   margin-top: 0px;
@@ -194,23 +189,31 @@ body {
 
 .tls-bwh {
   z-index: 1;
-  color: #22668D;
+  color: #22668d;
 }
 
 @media (max-width: 768px) {
   .ouri img {
     width: 350px;
   }
-
 }
-
-
-
 
 /* HERO END*/
 
 @media (max-width: 768px) {
+  .navbar {
+    margin-left: auto;
+  }
 
+  .navbar-nav {
+    display: none;
+    margin-left: 0;
+  }
+
+  .navbar a {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
 
   /* menu */
   /* Tambahkan gaya CSS untuk tampilan menu navigasi pada perangkat seluler */
