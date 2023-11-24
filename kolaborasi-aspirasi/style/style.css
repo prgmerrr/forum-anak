@@ -2,6 +2,7 @@ body {
   background-color: #ffffff;
 
 
+
 }
 
 :root {
@@ -10,21 +11,15 @@ body {
   --primary: #f8cf2c;
 }
 
-.bg-atas {
-  background-color: #22668d;
-  border: #22668d;
-  border-radius: 34px;
-}
+
 
 /* HEADER */
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
+.header {}
+
+.bg-atas {
   background-color: #22668d;
-  color: #fdce20;
-  border-radius: 34px;
+  border-radius: 20px;
+
 }
 
 /* Logo */
@@ -40,6 +35,8 @@ body {
   color: #fdce20;
 }
 
+
+
 .logo-foranggis {
   width: 60px;
   height: auto;
@@ -47,38 +44,64 @@ body {
 }
 
 .foranggis-text {
+  margin-top: 10px;
   font-size: 30px;
   font-family: "Open Sans", sans-serif;
+  font-weight: bold
 }
 
 /* Navigation Bar */
-.navbar {
-  display: flex;
-  align-items: center;
-  margin-right: 10px;
-}
 
-.navbar-nav {
-  display: flex;
-  align-items: center;
-  margin: 0 20px 0 0;
-}
 
 .navbar-nav a {
-  font-size: 20px;
+
   font-family: "Open Sans", sans-serif;
   text-decoration: none;
   color: #fdce20;
-  margin-right: 20px;
+
 }
 
 .icon {
-  margin: 0 500px 0 0;
+  margin: 10px 5px 0 0;
 }
 
 .icon :hover {
   color: #a88b18;
   transition: 0.3s;
+}
+
+.nav-item.active .nav-link {
+  color: white;
+}
+
+.navbar-nav .nav-link {
+  font-size: 25px;
+  padding-right: 20px;
+  position: relative;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.navbar-nav .nav-link::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 42%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  border: 2px solid transparent;
+  border-radius: 45%;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+
+.navbar-nav .nav-link:hover::before,
+.navbar-nav .nav-link:focus::before {
+  border-color: #FFDE59;
+  opacity: 1;
 }
 
 .nav {
@@ -87,23 +110,7 @@ body {
   justify-content: space-between;
 }
 
-.foranggis-nav,
-.kids-nav,
-.social-nav {
-  border: 2px solid transparent;
-  padding: 3px;
-  border-radius: 15px;
-  margin: 1px;
-  transition: 0.3s;
-}
 
-.foranggis-nav:hover,
-.kids-nav:hover,
-.social-nav:hover {
-  color: #a88b18;
-  border-color: #a88b18;
-  /* Warna garis saat dihover */
-}
 
 /* SEARCH FORM */
 #search-form {
@@ -198,22 +205,12 @@ body {
 }
 
 
+
+
 /* HERO END*/
 
 @media (max-width: 768px) {
-  .navbar {
-    margin-left: auto;
-  }
 
-  .navbar-nav {
-    display: none;
-    margin-left: 0;
-  }
-
-  .navbar a {
-    margin-right: 0;
-    margin-bottom: 10px;
-  }
 
   /* menu */
   /* Tambahkan gaya CSS untuk tampilan menu navigasi pada perangkat seluler */
