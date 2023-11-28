@@ -12,6 +12,7 @@ body {
   background-color: #22668d;
   border: #22668d;
   border-radius: 34px;
+  display: block;
 }
 
 /* HEADER */
@@ -168,9 +169,6 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
-.our {
-}
-
 .ouri {
   margin-top: 0px;
   display: flex;
@@ -191,6 +189,15 @@ body {
   z-index: 1;
   color: #22668d;
 }
+
+/* slider card */
+
+.slider-card button {
+  background-color: transparent;
+  border: none;
+}
+
+/* slider card end*/
 
 @media (max-width: 768px) {
   .ouri img {
