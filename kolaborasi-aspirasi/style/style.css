@@ -9,6 +9,7 @@ body {
 }
 
 .bg-atas {
+  margin: 10px;
   background-color: #22668d;
   border: #22668d;
   border-radius: 34px;
@@ -177,20 +178,28 @@ body {
 }
 
 .ouri img {
-  width: 900px;
+  width: 1300px;
   /* Sesuaikan dengan lebar yang diinginkan */
-  height: auto;
+  height: 600px;
   /* Menjaga rasio aspek gambar */
   align-self: flex-start;
   /* Menggeser gambar ke atas */
 }
 
-.tls-bwh {
-  z-index: 1;
+.tls-bwh p {
+  width: 700px;
+  margin: auto;
+  font-display: block;
+  font-size: 19px;
   color: #22668d;
+  text-align: center;
 }
 
 /* slider card */
+
+.container h1 {
+  color: #22668d;
+}
 
 .slider-card button {
   background-color: transparent;
@@ -198,6 +207,12 @@ body {
 }
 
 /* slider card end*/
+
+/* event */
+.text-event {
+  color: #22668d;
+}
+/* event end */
 
 @media (max-width: 768px) {
   .ouri img {
