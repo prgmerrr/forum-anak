@@ -1,0 +1,99 @@
+:root {
+  --fonts-color: #000000;
+  --bg-color: #f9dc5d;
+}
+
+body {
+  font-family: "Lilita One", sans-serif;
+  background-color: var(--bg-color);
+}
+
+h1,
+h2,
+h4,
+h5 {
+  font-weight: lighter;
+  margin: 40px 10px;
+}
+
+.container {
+  background-color: #fff;
+  width: 456.7px;
+  height: 555.9px;
+  margin: 50px auto;
+  border-radius: 15px;
+  padding-top: 15px;
+}
+
+.row {
+  display: block;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.text-atas {
+  position: sticky;
+  text-align: center;
+  margin: 20px 136px 0;
+}
+
+.text-bawah {
+  text-align: center;
+  margin: 0 105px;
+  text-decoration: none;
+  color: #000000;
+}
+.text-bawah:hover {
+  color: var(--bg-color);
+  transition: 0.3s;
+  text-shadow: #000000;
+}
+
+.text-kecil {
+  font-size: 13px;
+  margin: 0 15px;
+}
+
+.input-text {
+  width: 60%;
+}
+
+.submit {
+  margin: -2px auto;
+  text-align: center;
+}
+
+/* Existing CSS code */
+
+/* Media query for screens smaller than 600px */
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: 14px; /* Adjust the font size for smaller screens */
+  }
+
+  .container {
+    width: 90%; /* Make the container wider for smaller screens */
+    margin: 20px auto; /* Adjust the margin for smaller screens */
+  }
+
+  .row {
+    margin: 10px; /* Adjust the margin for smaller screens */
+  }
+
+  .text-atas {
+    margin: 20px 10px 0; /* Adjust the margin for smaller screens */
+  }
+
+  .text-bawah {
+    margin: 0 10px; /* Adjust the margin for smaller screens */
+  }
+
+  .input-text {
+    width: 70%; /* Make the input fields full width on smaller screens */
+  }
+
+  .submit {
+    margin: 0 auto; /* Adjust the margin for smaller screens */
+  }
+}
