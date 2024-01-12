@@ -197,7 +197,7 @@
         background-color: #fef8f5;
     }
     </style>
-    <title>Nibiru</title>
+    <title>Foranggis | Website Forum Anak Kecamatan Cimanggis</title>
 </head>
 
 <body>
@@ -428,6 +428,7 @@
         </script>
     </section>
     <!-- End Hero -->
+    
     <section>
         <?php
         require_once "index copy.html";
@@ -479,6 +480,10 @@
             </div>
         </div>
     </footer>
+
+    <script>
+      feather.replace();
+    </script>
 </body>
 
 </html>
