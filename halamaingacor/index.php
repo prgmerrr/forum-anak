@@ -8,10 +8,10 @@
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous">
-        </script>
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
         integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous">
-        </script>
+    </script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.21.0/font/bootstrap-icons.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -19,183 +19,183 @@
         rel="stylesheet" />
     <script src="https://unpkg.com/feather-icons"></script>
     <style>
-        /* Custom Styles */
-        /* navbar */
-        .header {
-            position: absolute;
-            width: 100%;
-            z-index: 1000;
+    /* Custom Styles */
+    /* navbar */
+    .header {
+        position: absolute;
+        width: 100%;
+        z-index: 1000;
 
-        }
-
-
+    }
 
 
 
-        /* Custom Styles */
-        .sec1 {
-            position: relative;
-            z-index: 2;
-        }
-
-        body {
-
-            scroll-behavior: smooth;
-            position: relative;
-        }
-
-        /* Adjust padding for the header */
-
-        /* Adjust the logo and other styles as needed */
-        .logo a {
-            color: #c61a1a;
-            /* Change text color */
-        }
-
-        .navbar-nav {
-            background-color: #fef8f5;
-        }
-
-        .navbar-nav a {
-            font-size: 22px;
-            font-weight: 100px;
-            font-family: "Open Sans", sans-serif;
-            text-decoration: none;
-            color: #ffda48;
-
-        }
-
-        /* Adjust the hover color for the navbar links */
-        .navbar-nav a:hover {
-            border-color: #ffda48;
-            color: #ffda48;
-        }
-
-        .navbar-nav a {
-            border: 2px solid transparent;
-            padding: 3px;
-            border-radius: 15px;
-            margin: 0 0 0 0;
-            transition: 0.3s;
-        }
-
-        /* SEARCH FORM */
-        #search-form {
-            position: relative;
-            margin: -0.4rem 0 0 0;
-        }
-
-        /* Adjust other styles as needed */
 
 
+    /* Custom Styles */
+    .sec1 {
+        position: relative;
+        z-index: 2;
+    }
 
-        .img-fluid {
-            max-width: 100%;
-            /* Make the image responsive */
-            height: auto;
-        }
+    body {
 
-        body {
+        scroll-behavior: smooth;
+        position: relative;
+    }
 
-            scroll-behavior: smooth;
-            position: relative;
-        }
+    /* Adjust padding for the header */
 
+    /* Adjust the logo and other styles as needed */
+    .logo a {
+        color: #c61a1a;
+        /* Change text color */
+    }
 
-        /* Set a fixed height for the carousel on larger screens */
+    .navbar-nav {
+        background-color: #fef8f5;
+    }
 
+    .navbar-nav a {
+        font-size: 22px;
+        font-weight: 100px;
+        font-family: "Open Sans", sans-serif;
+        text-decoration: none;
+        color: #ffda48;
 
-        .sec1 {
-            background-image: url("img/paperbg.png");
-            /* Add other background properties as needed */
-            background-size: cover;
-            /* Adjust as needed */
-            background-position: center;
-            /* Adjust as needed */
-            background-repeat: no-repeat;
-            /* Adjust as needed */
-        }
+    }
 
+    /* Adjust the hover color for the navbar links */
+    .navbar-nav a:hover {
+        border-color: #ffda48;
+        color: #ffda48;
+    }
 
-        .footer a {
-            color: #ffffff;
-            text-decoration: none;
-        }
+    .navbar-nav a {
+        border: 2px solid transparent;
+        padding: 3px;
+        border-radius: 15px;
+        margin: 0 0 0 0;
+        transition: 0.3s;
+    }
 
-        .footer {
-            background-color: #22668d;
-            padding: 20px 0;
-            color: #ffffff;
-            text-decoration: none;
-        }
+    /* SEARCH FORM */
+    #search-form {
+        position: relative;
+        margin: -0.4rem 0 0 0;
+    }
 
-        .judul-1 {
-            color: #ffd25e;
-            font-family: "Open Sans", sans-serif;
-            font-weight: bold;
-            text-shadow: 2px 2px 4px #805c00;
-            /* Adjust values for the shadow effect */
-        }
-
-        .text-1 {
-            color: #7f0500;
-            font-family: "open sans", sans-serif;
-            text-shadow: 2px 2px 6px #000000c7;
-        }
-
-        .judul-2 {
-            color: #ffd25e;
-            font-family: "Open Sans", sans-serif;
-            font-weight: bold;
-            text-shadow: 2px 2px 4px #805c00;
-            /* Adjust values for the shadow effect */
-        }
-
-        .text-2 {
-            color: #7f0500;
-            font-family: "open sans", sans-serif;
-            text-shadow: 2px 2px 6px #000000c7;
-        }
-
-        .logo {
-            display: flex;
-            align-items: center;
-            margin: 10px 0 0 0px;
-        }
-
-        .logo a {
-            text-decoration: none;
-            display: flex;
-            align-items: center;
-            color: #fdce20;
-        }
-
-        .logo-foranggis {
-            width: 60px;
-            height: auto;
-            margin-left: 30px;
-        }
+    /* Adjust other styles as needed */
 
 
-        .navbar-toggler-icon {
-            background-color: #fdce20;
-            color: #22668d;
-        }
 
-        .navbar-toggler-icon {
-            background-color: #fdce20;
-            border: 1px solid #fdce20;
-            /* Menambahkan border */
-        }
+    .img-fluid {
+        max-width: 100%;
+        /* Make the image responsive */
+        height: auto;
+    }
 
-        .logo {
-            width: 90px;
-            height: 80px;
-        }
+    body {
 
-        nav.navbar {
-            background-color: #fef8f5;
-        }
+        scroll-behavior: smooth;
+        position: relative;
+    }
+
+
+    /* Set a fixed height for the carousel on larger screens */
+
+
+    .sec1 {
+        background-image: url("img/paperbg.png");
+        /* Add other background properties as needed */
+        background-size: cover;
+        /* Adjust as needed */
+        background-position: center;
+        /* Adjust as needed */
+        background-repeat: no-repeat;
+        /* Adjust as needed */
+    }
+
+
+    .footer a {
+        color: #ffffff;
+        text-decoration: none;
+    }
+
+    .footer {
+        background-color: #22668d;
+        padding: 20px 0;
+        color: #ffffff;
+        text-decoration: none;
+    }
+
+    .judul-1 {
+        color: #ffd25e;
+        font-family: "Open Sans", sans-serif;
+        font-weight: bold;
+        text-shadow: 2px 2px 4px #805c00;
+        /* Adjust values for the shadow effect */
+    }
+
+    .text-1 {
+        color: #7f0500;
+        font-family: "open sans", sans-serif;
+        text-shadow: 2px 2px 6px #000000c7;
+    }
+
+    .judul-2 {
+        color: #ffd25e;
+        font-family: "Open Sans", sans-serif;
+        font-weight: bold;
+        text-shadow: 2px 2px 4px #805c00;
+        /* Adjust values for the shadow effect */
+    }
+
+    .text-2 {
+        color: #7f0500;
+        font-family: "open sans", sans-serif;
+        text-shadow: 2px 2px 6px #000000c7;
+    }
+
+    .logo {
+        display: flex;
+        align-items: center;
+        margin: 10px 0 0 0px;
+    }
+
+    .logo a {
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        color: #fdce20;
+    }
+
+    .logo-foranggis {
+        width: 60px;
+        height: auto;
+        margin-left: 30px;
+    }
+
+
+    .navbar-toggler-icon {
+        background-color: #fdce20;
+        color: #22668d;
+    }
+
+    .navbar-toggler-icon {
+        background-color: #fdce20;
+        border: 1px solid #fdce20;
+        /* Menambahkan border */
+    }
+
+    .logo {
+        width: 90px;
+        height: 80px;
+    }
+
+    nav.navbar {
+        background-color: #fef8f5;
+    }
     </style>
     <title>Nibiru</title>
 </head>
@@ -261,101 +261,101 @@
     </nav>
 
     <style>
+    #hero {
+        width: 100%;
+        height: 70vh;
+        background: #fef8f5;
+        border-bottom: 2px solid #fcebe3;
+        margin: 0px 0 -72px 0;
+    }
+
+    #hero h1 {
+        margin: 0;
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 56px;
+        color: #4e4039;
+    }
+
+    #hero h2 {
+        color: #a08f86;
+        margin: 15px 0 0 0;
+        font-size: 24px;
+    }
+
+    #hero .btn-get-started {
+        font-family: "Raleway", sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        letter-spacing: 1px;
+        display: inline-block;
+        padding: 8px 28px;
+        border-radius: 3px;
+        transition: 0.5s;
+        margin-top: 30px;
+        color: #fff;
+        background: #eb5d1e;
+    }
+
+    #hero .btn-get-started:hover {
+        background: #ef7f4d;
+    }
+
+    #hero .animated {
+        animation: up-down 2s ease-in-out infinite alternate-reverse both;
+    }
+
+    @media (max-width: 991px) {
         #hero {
-            width: 100%;
-            height: 70vh;
-            background: #fef8f5;
-            border-bottom: 2px solid #fcebe3;
-            margin: 0px 0 -72px 0;
+            height: calc(100vh - 72px);
         }
 
+        #hero .hero-img {
+            text-align: center;
+        }
+
+        #hero .hero-img img {
+            width: 50%;
+        }
+    }
+
+    @media (max-width: 768px) {
         #hero h1 {
-            margin: 0;
-            font-size: 48px;
-            font-weight: 700;
-            line-height: 56px;
-            color: #4e4039;
+            font-size: 28px;
+            line-height: 36px;
         }
 
         #hero h2 {
-            color: #a08f86;
-            margin: 15px 0 0 0;
-            font-size: 24px;
+            font-size: 18px;
+            line-height: 24px;
         }
 
-        #hero .btn-get-started {
-            font-family: "Raleway", sans-serif;
-            font-weight: 500;
-            font-size: 16px;
-            letter-spacing: 1px;
-            display: inline-block;
-            padding: 8px 28px;
-            border-radius: 3px;
-            transition: 0.5s;
-            margin-top: 30px;
-            color: #fff;
-            background: #eb5d1e;
+        #hero .hero-img img {
+            width: 70%;
+        }
+    }
+
+    @media (max-width: 575px) {
+        #hero .hero-img img {
+            width: 80%;
+        }
+    }
+
+    @media (max-height: 600px) {
+        #hero {
+            height: 120vh;
+        }
+    }
+
+    @keyframes up-down {
+        0% {
+            transform: translateY(10px);
         }
 
-        #hero .btn-get-started:hover {
-            background: #ef7f4d;
+        100% {
+            transform: translateY(-10px);
         }
-
-        #hero .animated {
-            animation: up-down 2s ease-in-out infinite alternate-reverse both;
-        }
-
-        @media (max-width: 991px) {
-            #hero {
-                height: calc(100vh - 72px);
-            }
-
-            #hero .hero-img {
-                text-align: center;
-            }
-
-            #hero .hero-img img {
-                width: 50%;
-            }
-        }
-
-        @media (max-width: 768px) {
-            #hero h1 {
-                font-size: 28px;
-                line-height: 36px;
-            }
-
-            #hero h2 {
-                font-size: 18px;
-                line-height: 24px;
-            }
-
-            #hero .hero-img img {
-                width: 70%;
-            }
-        }
-
-        @media (max-width: 575px) {
-            #hero .hero-img img {
-                width: 80%;
-            }
-        }
-
-        @media (max-height: 600px) {
-            #hero {
-                height: 120vh;
-            }
-        }
-
-        @keyframes up-down {
-            0% {
-                transform: translateY(10px);
-            }
-
-            100% {
-                transform: translateY(-10px);
-            }
-        }
+    }
     </style>
     <section id="hero" class="d-flex align-items-center">
         <div class="container">
@@ -379,52 +379,52 @@
             </div>
         </div>
         <script>
-            var currentHeroBackground = 0;
-            var heroBackgroundImages = [
-                "Gorgosaurus_BW_transparent.png",
-                "00.png",
-                "jarap.png",
-            ];
+        var currentHeroBackground = 0;
+        var heroBackgroundImages = [
+            "Gorgosaurus_BW_transparent.png",
+            "00.png",
+            "jarap.png",
+        ];
 
-            function preloadImages() {
-                for (var i = 0; i < heroBackgroundImages.length; i++) {
-                    var img = new Image();
-                    img.src = heroBackgroundImages[i];
-                }
+        function preloadImages() {
+            for (var i = 0; i < heroBackgroundImages.length; i++) {
+                var img = new Image();
+                img.src = heroBackgroundImages[i];
             }
+        }
 
-            function changeHeroBackground() {
-                var newHeroBackground = heroBackgroundImages[currentHeroBackground];
-                document.getElementById("hero").style.backgroundImage =
-                    "url(" + newHeroBackground + ")";
-            }
+        function changeHeroBackground() {
+            var newHeroBackground = heroBackgroundImages[currentHeroBackground];
+            document.getElementById("hero").style.backgroundImage =
+                "url(" + newHeroBackground + ")";
+        }
 
-            // Preload gambar sebelum tampilan pertama
-            preloadImages();
+        // Preload gambar sebelum tampilan pertama
+        preloadImages();
 
-            // Tampilkan gambar pertama saat web dibuka
+        // Tampilkan gambar pertama saat web dibuka
+        changeHeroBackground();
+
+        // Tombol "Next"
+        var nextHeroBackgroundButton = document.getElementById(
+            "nextHeroBackgroundButton"
+        );
+        nextHeroBackgroundButton.addEventListener("click", function() {
+            currentHeroBackground =
+                (currentHeroBackground + 1) % heroBackgroundImages.length;
             changeHeroBackground();
+        });
 
-            // Tombol "Next"
-            var nextHeroBackgroundButton = document.getElementById(
-                "nextHeroBackgroundButton"
-            );
-            nextHeroBackgroundButton.addEventListener("click", function () {
-                currentHeroBackground =
-                    (currentHeroBackground + 1) % heroBackgroundImages.length;
-                changeHeroBackground();
-            });
-
-            // Tombol "Previous"
-            var prevHeroBackgroundButton = document.getElementById(
-                "prevHeroBackgroundButton"
-            );
-            prevHeroBackgroundButton.addEventListener("click", function () {
-                currentHeroBackground =
-                    (currentHeroBackground - 1 + heroBackgroundImages.length) %
-                    heroBackgroundImages.length;
-                changeHeroBackground();
-            });
+        // Tombol "Previous"
+        var prevHeroBackgroundButton = document.getElementById(
+            "prevHeroBackgroundButton"
+        );
+        prevHeroBackgroundButton.addEventListener("click", function() {
+            currentHeroBackground =
+                (currentHeroBackground - 1 + heroBackgroundImages.length) %
+                heroBackgroundImages.length;
+            changeHeroBackground();
+        });
         </script>
     </section>
     <!-- End Hero -->

@@ -1,178 +1,242 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-      crossorigin="anonymous"
-    ></script>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Open+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <style>
-      .card-title {
-        font-weight: 600;
-        font-family: "Montserrat", sans-serif;
-      }
-
-      .card-text {
-        font-weight: 400;
-      }
-
-      .h1,
-      p {
-        font-weight: 700;
-        font-family: sans-serif;
-      }
-      .jaja {
-        margin-top: 10px;
-        font-family: sans-serif;
-      }
-
-      /* Card styles */
-      .asu {
-        transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-        border: 3px solid #ffcc00; /* Border color */
-        border-radius: 100px; /* Rounded corners */
-        box-shadow: 10px 12px 12px #ffcc00; /* Box shadow */
-        max-height: 550px; /* Set your desired maximum height */
-        animation: fadeIn 1s ease-out;
-      }
-
-      .asu:hover {
-        animation: scaleUp 1s ease-in-out;
-        box-shadow: 10px 12px 12px #ffcc00;
-      }
-
-      .card-link {
-        text-decoration: none;
-        color: inherit;
-      }
-
-      /* Keyframe animations */
-      @keyframes scaleUp {
-        0% {
-          transform: scale(1);
-        }
-        50% {
-          transform: scale(1.1);
-        }
-        100% {
-          transform: scale(1);
-        }
-      }
-
-      .OAJA {
-        color: #f2cb31;
-      }
-      .IJI {
-        color: #7f0500;
-        text-shadow: 10px;
-        text-shadow: #f2cb31;
-      }
-    </style>
-    <div class="container jaja">
-      <div class="card-group col-md-9 mx-auto">
-        <div class="card mb-5 me-2 asu">
-          <a
-            href="coming-soon"
-            class="card-link"
-            style="text-decoration: none; color: inherit"
-          >
-            <img
-              src="images/kontol.png"
-              class="card-img-top mx-auto d-block"
-              alt="..."
-              style="width: 240px"
-            />
-
-            <div class="card-body">
-              <h5 class="card-title OAJA">NIBIRU</h5>
-              <p class="card-text IJI">
-                Ini merupakan platform dimana user bisa berinteraksi dengan user
-                lain, dan disini juga dalam pengawasan admin
-              </p>
-            </div>
-          </a>
-        </div>
-
-        <div class="card mb-5 me-2 asu">
-          <a href="laporan" class="card-link">
-            <img
-              src="images/catetan.png"
-              class="card-img-top mx-auto"
-              alt="..."
-            />
-
-            <div class="card-body">
-              <h5 class="card-title OAJA">LAPORAN</h5>
-              <p class="card-text IJI">
-                Sebuah platform yang di buat untuk user mengirimkan sebuah
-                laporan atau pun pengaduan
-              </p>
-            </div>
-          </a>
-        </div>
-
-        <a
-          href="coming-soon"
-          class="card mb-5 ms-1 asu"
-          style="text-decoration: none; color: inherit"
+<section class="initial-animation">
+  <section id="icon-boxes" class="icon-boxes">
+    <div class="container">
+      <div class="row">
+        <div
+          class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0"
+          data-aos="fade-up"
         >
-          <img
-            src="images/laporan.png"
-            class="card-img-top img-fluid mx-auto"
-            alt="..."
-            style="width: 150px; height: auto"
-          />
-
-          <div class="card-body">
-            <h5 class="card-title OAJA">SOFO</h5>
-            <p class="card-text IJI">
-              Ini adalah sebuah fitur yang dapat kalian pakai untuk mengirim
-              foto kegiatan kalian.
-            </p>
+          <div class="icon-box">
+            <div class="icon"><i class="bx bxl-dribbble"></i></div>
+            <h4 class="title pepk">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="240"
+                height="70"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-send"
+              >
+                <line x1="22" y1="2" x2="11" y2="13" />
+                <polygon points="22 2 15 22 11 13 2 9 22 2" />
+              </svg>
+            </h4>
+            <p class="description">NIBIRU</p>
           </div>
-        </a>
+        </div>
 
-        <div class="card mb-5 ms-2 asu">
-          <a href="aspirasi" style="text-decoration: none; color: inherit">
-            <img src="images/tiwo.png" class="card-img-top mx-auto" alt="..." />
-          </a>
-          <div class="card-body">
-            <h5 class="card-title OAJA">ASPIRASI</h5>
-            <p class="card-text IJI">
-              Wowww kamu punya ide atau aspirasi buat cimanggis?! kakak bangga!
-              kamu bingung lewat mana? lewat sini ajaaa!
-            </p>
+        <div
+          class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
+          <div class="icon-box">
+            <div class="icon"><i class="bx bx-file"></i></div>
+            <h4 class="title pepk">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="240"
+                height="70"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-send"
+              >
+                <line x1="22" y1="2" x2="11" y2="13" />
+                <polygon points="22 2 15 22 11 13 2 9 22 2" />
+              </svg>
+            </h4>
+            <p class="description">NIBIRU</p>
+          </div>
+        </div>
+
+        <div
+          class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
+          <div class="icon-box">
+            <div class="icon"><i class="bx bx-tachometer"></i></div>
+            <h4 class="title pepk">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="240"
+                height="70"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-send"
+              >
+                <line x1="22" y1="2" x2="11" y2="13" />
+                <polygon points="22 2 15 22 11 13 2 9 22 2" />
+              </svg>
+            </h4>
+            <p class="description">NIBIRU</p>
+          </div>
+        </div>
+
+        <div
+          class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0"
+          data-aos="fade-up"
+          data-aos-delay="300"
+        >
+          <div class="icon-box">
+            <div class="icon"><i class="bx bx-layer"></i></div>
+            <h4 class="title pepk">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="240"
+                height="70"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-send"
+              >
+                <line x1="22" y1="2" x2="11" y2="13" />
+                <polygon points="22 2 15 22 11 13 2 9 22 2" />
+              </svg>
+            </h4>
+            <p class="description">NIBIRU</p>
           </div>
         </div>
       </div>
     </div>
-  </body>
-</html>
+  </section>
+</section>
+<style>
+  /*--------------------------------------------------------------
+# Icon Boxes
+--------------------------------------------------------------*/
+  .icon-boxes {
+    padding-top: 0;
+    position: relative;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .icon-boxes .icon-box {
+    padding: 40px 30px;
+    position: relative;
+    overflow: hidden;
+    background: #ffeeaf;
+    box-shadow: 5px 10px 29px 0 rgba(68, 88, 144, 0.2);
+    transition: all 0.3s ease-in-out;
+    border-radius: 10px;
+  }
+  @media (max-width: 720px) {
+    .icon-boxes .icon-box {
+      margin-left: 20px;
+    }
+  }
+  .pepk {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .icon-boxes .icon {
+    margin: 0 auto 20px auto;
+    display: inline-block;
+    text-align: center;
+  }
+
+  .icon-boxes .icon i {
+    font-size: 36px;
+    line-height: 1;
+    color: #f6b024;
+  }
+
+  .icon-boxes .title a {
+    color: #05579e;
+  }
+
+  .icon-boxes .description {
+    font-size: 15px;
+    line-height: 28px;
+    margin-bottom: 0;
+    color: #777777;
+  }
+  .pepk {
+    border-radius: 10px;
+
+    opacity: 0.5;
+    background: #787878;
+  }
+
+  @media (max-width: 720px) {
+    .icon-boxes .icon-box {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  /* Centering for larger screens */
+  @media (min-width: 721px) {
+    .icon-boxes .row {
+      justify-content: center;
+    }
+
+    .icon-boxes .icon-box {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+  }
+  .icon-boxes .icon-box.active {
+    transform: translateY(-10px);
+    box-shadow: 5px 10px 29px 0 rgba(68, 88, 144, 0.4);
+  }
+
+  .icon-boxes .icon-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 5px 10px 29px 0 rgba(68, 88, 144, 0.4);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  body {
+    overflow-x: hidden; /* Prevent horizontal scrollbar */
+  }
+
+  .initial-animation {
+    animation: initialSlide 1s ease-in-out;
+  }
+
+  @keyframes initialSlide {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+</style>
+<script>
+  $(document).ready(function () {
+    $(".icon-box").on("click", function () {
+      $(this).addClass("active");
+      setTimeout(function () {
+        $(".icon-box").removeClass("active");
+      }, 1000); // Adjust the duration of the animation
+    });
+  });
+  $(document).ready(function () {
+    $(".icon-box").on("click", function () {
+      $(this).addClass("active");
+      setTimeout(function () {
+        $(".icon-box").removeClass("active");
+      }, 1000); // Adjust the duration of the click animation
+    });
+  });
+</script>
