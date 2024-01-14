@@ -1,13 +1,10 @@
 /* Google Fonts - Poppins */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
 * {
-
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
-
-
 
 .slide-container {
   max-width: 1120px;
@@ -23,7 +20,7 @@
 
 .card {
   border-radius: 25px;
-  background-color: #FFF;
+  background-color: #fff;
 }
 
 .image-content,
@@ -46,24 +43,24 @@
   top: 0;
   height: 100%;
   width: 100%;
-  background-color: #FFD700;
+  background-color: #ffd700;
   border-radius: 25px 25px 0 25px;
 }
 
 .overlay::before,
 .overlay::after {
-  content: '';
+  content: "";
   position: absolute;
   right: 0;
   bottom: -40px;
   height: 40px;
   width: 40px;
-  background-color: #FFD700;
+  background-color: #ffd700;
 }
 
 .overlay::after {
   border-radius: 0 25px 0 0;
-  background-color: #FFF;
+  background-color: #fff;
 }
 
 .card-image {
@@ -71,7 +68,7 @@
   height: 190px;
   width: 300px;
   border-radius: 10%;
-  background: #FFF;
+  background: #fff;
   padding: 3px;
 }
 
@@ -98,9 +95,9 @@
 .button {
   border: none;
   font-size: 16px;
-  color: #FFF;
+  color: #fff;
   padding: 8px 16px;
-  background-color: #FFD700;
+  background-color: #909090;
   border-radius: 6px;
   margin: 14px;
   cursor: pointer;
@@ -108,16 +105,16 @@
 }
 
 .button:hover {
-  background: #265DF2;
+  background: #265df2;
 }
 
 .swiper-navBtn {
-  color: #FFD700;
+  color: #ffd700;
   transition: color 0.3s ease;
 }
 
 .swiper-navBtn:hover {
-  color: #FFD700;
+  color: #ffd700;
 }
 
 .swiper-navBtn::before,
@@ -134,12 +131,12 @@
 }
 
 .swiper-pagination-bullet {
-  background-color: #6E93f7;
+  background-color: #6e93f7;
   opacity: 1;
 }
 
 .swiper-pagination-bullet-active {
-  background-color: #4070F4;
+  background-color: #4070f4;
 }
 
 @media screen and (max-width: 768px) {

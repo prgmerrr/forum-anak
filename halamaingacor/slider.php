@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!-- Coding by CodingLab | www.codinglabweb.com -->
 <html lang="en">
 
 <head>
@@ -35,10 +34,10 @@
             <div class="card-content">
 
               <h2 class="name">
-                <?php judul ?>
+                
               </h2>
               <p class="description">
-                <?php isi ?>
+                
               </p>
               <button class="button">View More</button>
             </div>
