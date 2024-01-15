@@ -118,14 +118,14 @@
 
 
     .footer a {
-        color: #ffffff;
+        color: #000;
         text-decoration: none;
     }
 
     .footer {
-        background-color: #22668d;
+        background-color: #FFF3C4;
         padding: 20px 0;
-        color: #ffffff;
+        color: #000;
         text-decoration: none;
     }
 
@@ -183,8 +183,8 @@
     }
 
     .navbar-toggler-icon {
-        background-color: #fdce20;
-        border: 1px solid #fdce20;
+        background-color: #FFF3C4;
+        border: transparent;
         /* Menambahkan border */
     }
 
