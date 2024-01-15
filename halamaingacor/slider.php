@@ -15,7 +15,7 @@
 </head>
 
 <body>
-  <div class="slide-container swiper">
+<div class="slide-container swiper" id="slider1">
     <div class="slide-content">
       <div class="card-wrapper swiper-wrapper">
         <?php
@@ -34,7 +34,45 @@
             <div class="card-content">
 
               <h2 class="name">
+                Lorem
+              </h2>
+              <p class="description">
                 
+              </p>
+              <button class="button">View More</button>
+            </div>
+          </div>
+          <?php
+        }
+        ?>
+      </div>
+    </div>
+
+    <div class="swiper-button-next swiper-navBtn"></div>
+    <div class="swiper-button-prev swiper-navBtn"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <div class="slide-container swiper" id="slider2">
+    <div class="slide-content">
+      <div class="card-wrapper swiper-wrapper">
+        <?php
+        $imageDirectory = "../admin/uploads/";
+        $images = glob($imageDirectory . "*.{jpg,jpeg,png,gif}", GLOB_BRACE);
+
+        foreach ($images as $image) {
+          ?>
+          <div class="card swiper-slide">
+            <div class="image-content">
+              <span class="overlay"></span>
+              <div class="card-image">
+                <img src="<?= $image ?>" alt="" class="card-img" />
+              </div>
+            </div>
+            <div class="card-content">
+
+              <h2 class="name">
+                Ipsum
               </h2>
               <p class="description">
                 
