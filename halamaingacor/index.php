@@ -57,24 +57,25 @@
     }
 
     .navbar-nav a {
-        font-size: 22px;
-        font-weight: 100px;
+        font-size: 18px;
+        font-weight: bold;
         font-family: "Open Sans", sans-serif;
         text-decoration: none;
-        color: #ffda48;
+        color: #000;
 
     }
 
     /* Adjust the hover color for the navbar links */
     .navbar-nav a:hover {
-        border-color: #ffda48;
-        color: #ffda48;
-    }
+        border-color: #ffeeaf;
+        background-color: #ffeeaf;
+        color: #000;
+        }
 
     .navbar-nav a {
         border: 2px solid transparent;
         padding: 3px;
-        border-radius: 15px;
+        border-radius: 10px;
         margin: 0 0 0 0;
         transition: 0.3s;
     }
@@ -118,14 +119,14 @@
 
 
     .footer a {
-        color: #ffffff;
+        color: #323232;
         text-decoration: none;
     }
 
     .footer {
-        background-color: #22668d;
+        background-color: #FFF3C4;
         padding: 20px 0;
-        color: #ffffff;
+        color: #323232;
         text-decoration: none;
     }
 
@@ -183,9 +184,7 @@
     }
 
     .navbar-toggler-icon {
-        background-color: #fdce20;
-        border: 1px solid #fdce20;
-        /* Menambahkan border */
+        background-color: #fef8f5;
     }
 
     .logo {
@@ -214,46 +213,30 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav  ms-auto =mb-2 mb-lg-0">
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" aria-current="page" href="#">About Us</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#">sosial</a>
+                        <a class="nav-link" href="#">Event</a>
                     </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
-                            kids
+                            Fitur
                         </a>
                         <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Nibiru</a></li>
+                            <li><a class="dropdown-item" href="#">Laporan</a></li>
                             <li><a class="dropdown-item" href="#">Sofo</a></li>
                             <li><a class="dropdown-item" href="#">Aspirasi</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">laporan</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            sosial
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Artikel</a></li>
-                            <li><a class="dropdown-item" href="#">Kegiatan</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Nibiru</a></li>
-                        </ul>
-                    </li>
-
                 </ul>
 
             </div>
@@ -299,15 +282,17 @@
         letter-spacing: 1px;
         display: inline-block;
         padding: 8px 28px;
-        border-radius: 3px;
-        transition: 0.5s;
+        border-radius: 5px;
+        transition: 0.9s;
         margin-top: 30px;
-        color: #fff;
-        background: #eb5d1e;
+        color: #000;
+        background: #ffeeaf;
     }
 
     #hero .btn-get-started:hover {
-        background: #ef7f4d;
+        background: #fae598;
+        border-radius: 20px;
+
     }
 
     @media (max-width: 991px) {
@@ -353,8 +338,9 @@
     <section id="hero">
 
         <div class="container">
-            <h1>Better digital experience with webpas</h1>
-            <h2 style="color: #fdce20;">
+            <h1>Better digital experience with WEBPASS</h1>
+            <h2 >
+                <!-- style="color: #fdce20;" -->
                 We are a team of talented designers making websites with webpas
             </h2>
             <a href="#" class="btn-get-started">Get Started</a>
@@ -377,14 +363,14 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <h5>Footer Content</h5>
-                    <p>Place your footer content here.</p>
+                    <h5>FORANGGIS</h5>
+                    <p>Kolaborasi, Aspirasi, Kreasi.</p>
                 </div>
                 <div class="col-md-6">
                     <h5>Quick Links</h5>
                     <ul class="list-unstyled">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Event</a></li>
                         <li><a href="#">Contact</a></li>
                     </ul>
                 </div>
@@ -411,7 +397,7 @@
                         </svg></a>
                 </div>
                 <div class="col-md-6 text-md-end">
-                    <p>&copy; Foranggis 2023 Desain by Webpas</p>
+                    <p>&copy; Foranggis 2024 Desain by WEBPASS</p>
                 </div>
             </div>
         </div>
