@@ -118,14 +118,14 @@
 
 
     .footer a {
-        color: #000;
+        color: #ffffff;
         text-decoration: none;
     }
 
     .footer {
-        background-color: #FFF3C4;
+        background-color: #22668d;
         padding: 20px 0;
-        color: #000;
+        color: #ffffff;
         text-decoration: none;
     }
 
@@ -183,8 +183,8 @@
     }
 
     .navbar-toggler-icon {
-        background-color: #FFF3C4;
-        border: transparent;
+        background-color: #fdce20;
+        border: 1px solid #fdce20;
         /* Menambahkan border */
     }
 
@@ -197,11 +197,11 @@
         background-color: #fef8f5;
     }
     </style>
-    <title>Foranggis | Website Forum Anak Kecamatan Cimanggis</title>
+    <title>Nibiru</title>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg ">
+    <nav class="navbar navbar-expand-lg fixed-top " style=" z-index: 1000;">
         <div class="container-fluid">
             <a class="navbar-brand ms-4" href="#">
                 <img src="img/logo-foranggis.png" alt="Logo" width="50" height="44" class="" />
@@ -264,17 +264,26 @@
     #hero {
         width: 100%;
         height: 70vh;
-        background: #fef8f5;
+
+        background: url('img/paperbg.png') center/cover no-repeat;
+        /* Use the correct path to your image */
+
         border-bottom: 2px solid #fcebe3;
-        margin: 0px 0 -72px 0;
+        margin: 0;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: #4e4039;
     }
 
     #hero h1 {
-        margin: 0;
         font-size: 48px;
         font-weight: 700;
         line-height: 56px;
-        color: #4e4039;
+        margin: 0;
+        color: inherit;
     }
 
     #hero h2 {
@@ -301,21 +310,19 @@
         background: #ef7f4d;
     }
 
-    #hero .animated {
-        animation: up-down 2s ease-in-out infinite alternate-reverse both;
-    }
-
     @media (max-width: 991px) {
         #hero {
             height: calc(100vh - 72px);
         }
 
-        #hero .hero-img {
-            text-align: center;
+        #hero h1 {
+            font-size: 28px;
+            line-height: 36px;
         }
 
-        #hero .hero-img img {
-            width: 50%;
+        #hero h2 {
+            font-size: 18px;
+            line-height: 24px;
         }
     }
 
@@ -329,106 +336,35 @@
             font-size: 18px;
             line-height: 24px;
         }
-
-        #hero .hero-img img {
-            width: 70%;
-        }
     }
 
     @media (max-width: 575px) {
-        #hero .hero-img img {
-            width: 80%;
-        }
-    }
-
-    @media (max-height: 600px) {
-        #hero {
-            height: 120vh;
-        }
-    }
-
-    @keyframes up-down {
-        0% {
-            transform: translateY(10px);
+        #hero h1 {
+            font-size: 24px;
+            line-height: 32px;
         }
 
-        100% {
-            transform: translateY(-10px);
+        #hero h2 {
+            font-size: 16px;
+            line-height: 22px;
         }
     }
     </style>
-    <section id="hero" class="d-flex align-items-center">
+    <section id="hero">
+
         <div class="container">
-            <div class="row gy-4">
-                <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
-                    <h1>Bettter digital experience with webpas</h1>
-                    <h2 style="color: #fdce20;">
-                        We are team of talented designers making websites with webpas
-                    </h2>
-                    <!-- <div>
-              <a href="#about" class="btn-get-started scrollto">Get Started</a>
-              <button class="button" id="prevHeroBackgroundButton">
-                Previous
-              </button>
-              <button class="button" id="nextHeroBackgroundButton">Next</button>
-            </div> -->
-                </div>
-                <div class="col-lg-6 order-1 order-lg-2 hero-img">
-                    <img src="img/3.png" class="img-fluid animated" alt="" />
-                </div>
-            </div>
+            <h1>Better digital experience with webpas</h1>
+            <h2 style="color: #fdce20;">
+                We are a team of talented designers making websites with webpas
+            </h2>
+            <a href="#" class="btn-get-started">Get Started</a>
         </div>
-        <script>
-        var currentHeroBackground = 0;
-        var heroBackgroundImages = [
-            "Gorgosaurus_BW_transparent.png",
-            "00.png",
-            "jarap.png",
-        ];
+    </section>
 
-        function preloadImages() {
-            for (var i = 0; i < heroBackgroundImages.length; i++) {
-                var img = new Image();
-                img.src = heroBackgroundImages[i];
-            }
-        }
 
-        function changeHeroBackground() {
-            var newHeroBackground = heroBackgroundImages[currentHeroBackground];
-            document.getElementById("hero").style.backgroundImage =
-                "url(" + newHeroBackground + ")";
-        }
 
-        // Preload gambar sebelum tampilan pertama
-        preloadImages();
-
-        // Tampilkan gambar pertama saat web dibuka
-        changeHeroBackground();
-
-        // Tombol "Next"
-        var nextHeroBackgroundButton = document.getElementById(
-            "nextHeroBackgroundButton"
-        );
-        nextHeroBackgroundButton.addEventListener("click", function() {
-            currentHeroBackground =
-                (currentHeroBackground + 1) % heroBackgroundImages.length;
-            changeHeroBackground();
-        });
-
-        // Tombol "Previous"
-        var prevHeroBackgroundButton = document.getElementById(
-            "prevHeroBackgroundButton"
-        );
-        prevHeroBackgroundButton.addEventListener("click", function() {
-            currentHeroBackground =
-                (currentHeroBackground - 1 + heroBackgroundImages.length) %
-                heroBackgroundImages.length;
-            changeHeroBackground();
-        });
-        </script>
     </section>
     <!-- End Hero -->
-    
     <section>
         <?php
         require_once "index copy.html";
@@ -480,10 +416,6 @@
             </div>
         </div>
     </footer>
-
-    <script>
-      feather.replace();
-    </script>
 </body>
 
 </html>

@@ -6,9 +6,10 @@
   font-family: "Poppins", sans-serif;
 }
 
-body{
+body {
   background-color: #FEF8F5;
 }
+
 .slide-container {
   max-width: 1120px;
   width: 100%;
@@ -23,7 +24,7 @@ body{
 
 .card {
   border-radius: 25px;
-  background-color: #fff;
+
 }
 
 .image-content,
@@ -32,7 +33,7 @@ body{
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 10px 14px;
+  padding: 8px 14px;
 }
 
 .image-content {
@@ -42,13 +43,14 @@ body{
 }
 
 .overlay {
+  margin-top: 10px;
   position: absolute;
   left: 0;
   top: 0;
   height: 100%;
   width: 100%;
   background-color: #323232;
-  border-radius: 25px ;
+  border-radius: 25px;
 }
 
 /* OVERLAY TIDAL TERPAKAI  */
@@ -74,7 +76,8 @@ body{
   height: 190px;
   width: 300px;
   border-radius: 10%;
-  padding: 3px;
+  padding: 2px;
+
 }
 
 .card-image .card-img {
@@ -82,12 +85,14 @@ body{
   width: 100%;
   object-fit: cover;
   border-radius: 10%;
+  margin-top: 10px;
 }
 
 .name {
   font-size: 18px;
   font-weight: 500;
   color: #333;
+  margin-top: 10px;
 }
 
 .description {
