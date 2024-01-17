@@ -335,16 +335,101 @@
         }
     }
     </style>
-    <section id="hero">
-
-        <div class="container">
-            <h1>Better digital experience with WEBPASS</h1>
-            <h2 >
-                <!-- style="color: #fdce20;" -->
-                We are a team of talented designers making websites with webpas
-            </h2>
-            <a href="#" class="btn-get-started">Get Started</a>
+<section id="hero" class="d-flex align-items-center">
+        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/w/1.png" class="mt-5 d-block w-100" alt="Image 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/w/2.png" class="mt-5 d-block w-100" alt="Image 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/w/3.png" class="mt-5 d-block w-100" alt="Image 3">
+                </div>
         </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+        </div>
+        <!-- <div class="container">
+            <div class="row gy-4">
+                <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
+                    <h1>Bettter digital experience with webpas</h1>
+                    <h2 style="color: #fdce20;">
+                        We are team of talented designers making websites with webpas
+                    </h2>
+                    <div>
+              <a href="#about" class="btn-get-started scrollto">Get Started</a>
+              <button class="button" id="prevHeroBackgroundButton">
+                Previous
+              </button>
+              <button class="button" id="nextHeroBackgroundButton">Next</button>
+            </div>
+                </div>
+                <div class="col-lg-6 order-1 order-lg-2 hero-img">
+                    <img src="img/3.png" class="img-fluid animated" alt="" />
+                </div>
+            </div>
+        </div> -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-4p9nVTCAXqWV9u3hZz4XrdoqseQEG5E4hEtFj+6r4H4ztc1fzEJQtkxyKkAbcF3F" crossorigin="anonymous">
+        </script>
+        <script>
+        var currentHeroBackground = 0;
+        var heroBackgroundImages = [
+            "Gorgosaurus_BW_transparent.png",
+            "00.png",
+            "jarap.png",
+        ];
+
+        function preloadImages() {
+            for (var i = 0; i < heroBackgroundImages.length; i++) {
+                var img = new Image();
+                img.src = heroBackgroundImages[i];
+            }
+        }
+
+        function changeHeroBackground() {
+            var newHeroBackground = heroBackgroundImages[currentHeroBackground];
+            document.getElementById("hero").style.backgroundImage =
+                "url(" + newHeroBackground + ")";
+        }
+
+        // Preload gambar sebelum tampilan pertama
+        preloadImages();
+
+        // Tampilkan gambar pertama saat web dibuka
+        changeHeroBackground();
+
+        // Tombol "Next"
+        var nextHeroBackgroundButton = document.getElementById(
+            "nextHeroBackgroundButton"
+        );
+        nextHeroBackgroundButton.addEventListener("click", function() {
+            currentHeroBackground =
+                (currentHeroBackground + 1) % heroBackgroundImages.length;
+            changeHeroBackground();
+        });
+
+        // Tombol "Previous"
+        var prevHeroBackgroundButton = document.getElementById(
+            "prevHeroBackgroundButton"
+        );
+        prevHeroBackgroundButton.addEventListener("click", function() {
+            currentHeroBackground =
+                (currentHeroBackground - 1 + heroBackgroundImages.length) %
+                heroBackgroundImages.length;
+            changeHeroBackground();
+        });
+        </script>
     </section>
 
 
