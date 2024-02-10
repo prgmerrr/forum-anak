@@ -276,7 +276,7 @@
 
     .btn.btn-primary,
     .btn.btn-secondary {
-        color: #4E4848;
+        color: #FFFFFF;
     }
 
     .btn-square {
@@ -370,7 +370,9 @@
         }
 
 
-    
+        .hp1 {
+            font-size: 40px;
+        }
 
     }
 
@@ -389,9 +391,9 @@
                                 <div class="col-10 col-lg-7 text-center text-lg-start">
                                     <h6 class="text-white text-uppercase mb-3 animated slideInDown">FORANGGIS PODCAST
                                     </h6>
-                                    <!-- <h1 class="display-3 text-white mb-4 pb-3 animated slideInDown">PACARAN, PERLU
+                                    <h1 class="display-3 text-white mb-4 pb-3 animated slideInDown">PACARAN, PERLU
                                         GAKSIH??
-                                    </h1> -->
+                                    </h1>
                                     <a href="https://youtu.be/-9p2G5ixy0Q?si=ZYA-YJiDNKdlBPsb"
                                         class="btn btn-primary py-3 px-4 animated slideInDown text-center">
                                         Tonton <i class="fa fa-arrow-right ms-3"></i>
@@ -438,10 +440,10 @@
 
 
                                     </h6>
-                                    <!-- <h1 class="display-3 text-white mb-4 pb-3 animated slideInDown asu">Disini kami
+                                    <h1 class="display-3 text-white mb-4 pb-3 animated slideInDown asu">Disini kami
                                         menjalin
                                         kerjasama dengan Taman Baca
-                                    </h1> -->
+                                    </h1>
                                     <a href="https://wa.link/6ukhla"
                                         class="btn btn-primary py-3 px-5 animated slideInDown">Konsultasi gratis<i
                                             class="fa fa-arrow-right ms-3"></i></a>
