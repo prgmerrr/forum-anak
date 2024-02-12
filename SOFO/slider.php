@@ -181,6 +181,8 @@ body {
 </style>
 
 <body>
+
+    <!-- SLIDER 1 -->
     <div class="slide-container swiper" id="slider1">
         <div class="slide-content">
             <div class="card-wrapper swiper-wrapper">
@@ -219,6 +221,8 @@ body {
         <div class="swiper-pagination"></div>
     </div>
 
+
+    <!-- SLIDER 2 -->
     <div class="slide-container swiper" id="slider2">
         <div class="slide-content">
             <div class="card-wrapper swiper-wrapper">
@@ -261,7 +265,7 @@ body {
         <div class="swiper-pagination"></div>
     </div>
 
-    <div class="slide-container swiper" id="slider2">
+    <!-- <div class="slide-container swiper" id="slider2">
         <div class="slide-content">
             <div class="card-wrapper swiper-wrapper">
                 <?php
@@ -301,7 +305,9 @@ body {
         <div class="swiper-button-next swiper-navBtn"></div>
         <div class="swiper-button-prev swiper-navBtn"></div>
         <div class="swiper-pagination"></div>
-    </div>
+    </div> -->
+
+
 </body>
 
 <!-- Swiper JS -->
@@ -311,3 +317,4 @@ body {
 <script src="js/script.js"></script>
 
 </html>
+
