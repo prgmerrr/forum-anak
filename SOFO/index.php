@@ -204,7 +204,7 @@
         <div class="container-fluid">
             <a class="navbar-brand ms-4" href="#">
                 <img src="img/logo-foranggis.png" alt="Logo" width="50" height="44" class="" />
-                <b style="color: #fdce20"> Hi (User) !</b>
+                <b style="color: #fdce20"> Hi User !</b>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -214,21 +214,21 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav  ms-auto =mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#">About Us</a>
+                        <a class="nav-link" aria-current="page" href="#">Home</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Event</a>
+                        <a class="nav-link" href="#">Post</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href="#">Delete</a>
                     </li>
 
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
-                            Fitur
+                            Feature
                         </a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="#">Nibiru</a></li>
@@ -404,7 +404,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <h5>FORANGGIS</h5>
+                    <h5>FORANGGIS   |   SOFO</h5>
                     <p>Kolaborasi, Aspirasi, Kreasi.</p>
                 </div>
                 <div class="col-md-6">
